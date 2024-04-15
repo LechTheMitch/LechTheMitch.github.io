@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color:white;
+    
+}
+caption{
+    color:cornflowerblue;
+    font-size: x-large;
+}
+th,td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    background-color:blueviolet;
+    color:#fff;
+    color:white;
+        background:rgb(32, 0, 128);
+        padding: 5px; 
+        width: 40%;
+       margin: auto;
+       border-width: 20px ;
+       border-color:rgb(123, 0, 255) rgb(0, 98, 128) blue rgb(0, 255, 242);
+       border-style: solid dotted;  
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:rgb(80, 55, 226)
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color:blueviolet;
+}
+
+/* Sign-in Form Styling */
+.signin-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.signin-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.signin-form input[type="text"],
+.signin-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signin-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+div{
+    color:white;
+        background:rgb(32, 0, 128);
+        padding: 5px; 
+        width: 70%;
+       margin: auto;
+       border-width: 20px ;
+       border-color:rgb(123, 0, 255) rgb(0, 98, 128) blue rgb(0, 255, 242);
+       border-style: solid dotted;
+       outline: 10px solid blue;
+}
