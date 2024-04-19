@@ -234,17 +234,21 @@ input.search {
     height: 36px;
     width: 200px;
 }
-section.hero div.temp {
+.hero{
+    background-color: #FFB157;
+}
+section.hero div.maxwidth {
     display:block;
-    align-items: center;
-    background-color: #FFBA6C;
     padding: 64px 0;
 }
 section.hero div.carousel {
     max-width: 1120px;
     background-color: #ff8800;
-    padding: 48px 0;
-    margin-top: 12px;
+    height: 350px;
+    border-radius: 8px;
+}
+div.carousel img {
+    border-radius: 8px;
 }
 hr{
     background-color: #FF9D2D;
