@@ -274,6 +274,7 @@ section.categories .cards{
     margin-left: auto;
 }
 section.categories .cards a{
+    margin-left: 25%;
     text-align: center;
     color: #7A0D10;
     font-size: 24px;
@@ -415,6 +416,17 @@ footer h5 {
 .footer-r ul li.phone {
     background: url(../node_modules/bootstrap-icons/icons/telephone-fill.svg) left 5px no-repeat;
 }
+.featured h2 {
+    margin-top: 32px;
+    text-align: center;
+}
+.featured hr{
+    background-color: #FF9D2D;
+    width: 120px;
+    height: 4px;
+    margin: 0 auto;
+    border: none;
+}
 .featured .cards{
     display: flex;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -423,17 +435,23 @@ footer h5 {
 }
 .featured .cards a{
     display: block;
-    background-color: #F6F6F6;
+    background-color: #F2E7E7;
     padding: 24px 12px;
-    text-align: center;
+    text-align: left;
     color: #7A0D10;
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 700;
+    border-radius: 8px;
     font-family: "Rubik", Helvetica, sans-serif;
 }
-.featured .cards .cards img{
-    width: 224px;
-    height: 224px;
+.featured .cards a:hover{
+    background-color: #d7b6b7;
+}
+
+.featured .cards img{
+    width: 125px;
+    height: 171px;
+    border-radius: 8px;
 
 }
 .unknown div.maxwidth {
