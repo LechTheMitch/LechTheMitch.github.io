@@ -282,8 +282,9 @@ section.categories .cards a{
     font-family: "Rubik", Helvetica, sans-serif;
 }
 section.categories .cards img{
-    width: auto;
-    height: auro;
+    width: 280px;
+    height: 280px;
+    border-radius: 8px;
 
 }
 li.sign-up a {
@@ -443,7 +444,7 @@ footer h5 {
     font-weight: 700;
     border-radius: 8px;
     max-width: 151px;
-    max-height: 236px;
+    max-height: min-content;
     font-family: "Rubik", Helvetica, sans-serif;
 }
 .featured .cards a:hover{
@@ -457,6 +458,13 @@ footer h5 {
 
 }
 .featured span{
+    display: block;
+    max-height: 27px;
+    overflow: hidden;
+    
+}
+.featured span.price{
+    margin-top: 4px;
     display: block;
     max-height: 27px;
     overflow: hidden;
