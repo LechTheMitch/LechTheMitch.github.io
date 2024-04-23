@@ -391,7 +391,7 @@ footer div.logo {
 } 
 .brands_sitemap li {
     line-height: 32px;
-    background: url(../images/menu-arrow.svg) left center no-repeat;
+    /* background: url(../images/menu-arrow.svg) left center no-repeat; */
 }
 .brands_sitemap li a {
     color: #0C0102;
