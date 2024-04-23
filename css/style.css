@@ -442,6 +442,8 @@ footer h5 {
     font-size: 12px;
     font-weight: 700;
     border-radius: 8px;
+    max-width: 151px;
+    max-height: 236px;
     font-family: "Rubik", Helvetica, sans-serif;
 }
 .featured .cards a:hover{
@@ -453,6 +455,12 @@ footer h5 {
     height: 171px;
     border-radius: 8px;
 
+}
+.featured span{
+    display: block;
+    max-height: 27px;
+    overflow: hidden;
+    
 }
 .unknown div.maxwidth {
     height: 300px;
