@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lilita One">
-    <!-- <script src="src/index.js"></script> -->
 </head>
 
 <body>
@@ -82,23 +81,11 @@
         <div class="maxwidth">
             <h2 class="primary10">Featured Products</h2>
             <hr>
-            <ul class="cards">
-                <li class="card"><a href="#"><img src="./images/Stolen.png" alt="#"><span>iPhone 14 Pro Max 256 Gb
-                            5Gmm</span><span class="price">68,000 EGP</span></a></li>
-                <li class="card"><a href="#"><img src="./images/Stolen.png" alt="#"><span>iPhone 14 Pro Max 256 Gb
-                            5Gmm</span><span class="price">68,000 EGP</span></a></li>
-                <li class="card"><a href="#"><img src="./images/Stolen.png" alt="#"><span>iPhone 14 Pro Max 256 Gb
-                            5Gmm</span><span class="price">68,000 EGP</span></a></li>
-                <li class="card"><a href="#"><img src="./images/Stolen.png" alt="#"><span>iPhone 14 Pro Max 256 Gb
-                            5Gmm</span><span class="price">68,000 EGP</span></a></li>
-                <li class="card"><a href="#"><img src="./images/Stolen.png" alt="#"><span>iPhone 14 Pro Max 256 Gb
-                            5Gmm</span><span class="price">68,000 EGP</span></a></li>
-                <li class="card"><a href="#"><img src="./images/Stolen.png" alt="#"><span>iPhone 14 Pro Max 256 Gb
-                            5Gmm</span><span class="price">68,000 EGP</span></a></li>
-                <li class="card"><a href="#"><img src="./images/Stolen.png" alt="#"><span>iPhone 14 Pro Max 256 Gb
-                            5Gmm</span><span class="price">68,000 EGP</span></a></li>
+            <ul class="cards test">
+                
 
             </ul>
+            <div class="listProduct"></div>
         </div>
     </section>
 
@@ -116,8 +103,8 @@
             <div class="footer-l">
                 <div class="logo">
                     <div class="logo">
-                        <a href="index.html"><img src="./images/logo.svg" alt="Site Logo"><span class="primary10">Mil<span
-                                    class="secondary10">ex</span></span></a>
+                        <a href="index.html"><img src="./images/logo.svg" alt="Site Logo"><span
+                                class="primary10">Mil<span class="secondary10">ex</span></span></a>
                     </div>
                 </div>
                 <p>Copyright text here</p>
@@ -159,7 +146,35 @@
             </div>
         </footer>
     </section>
+    <script>
+         let products = null;
+        fetch('products.json')
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                addDataToHTML();
+        })
 
+        function addDataToHTML(){
+        let listProductHTML = document.querySelector('.test');
+
+        {
+            products.forEach(product => {
+                let newProduct = document.createElement('li');
+                newProduct.href = '/detail.html?id=' + product.id;
+                newProduct.classList.add('card');
+                newProduct.innerHTML = 
+                `<a href="${newProduct.href}"><img src="${product.image}" alt="None">
+                <span>${product.name}</span>
+                <span class="price">$${product.price}</span></a>`;
+                listProductHTML.appendChild(newProduct);
+
+            });
+        }
+    }
+    </script>
 </body>
+<script src="js/script.js"></script>
+
 
 </html>
