@@ -146,35 +146,35 @@
             </div>
         </footer>
     </section>
-    <script>
-         let products = null;
-        fetch('products.json')
-            .then(response => response.json())
-            .then(data => {
-                products = data;
-                addDataToHTML();
-        })
-
-        function addDataToHTML(){
-        let listProductHTML = document.querySelector('.test');
-
-        {
-            products.forEach(product => {
-                let newProduct = document.createElement('li');
-                newProduct.href = '/detail.html?id=' + product.id;
-                newProduct.classList.add('card');
-                newProduct.innerHTML = 
-                `<a href="${newProduct.href}"><img src="${product.image}" alt="None">
-                <span>${product.name}</span>
-                <span class="price">$${product.price}</span></a>`;
-                listProductHTML.appendChild(newProduct);
-
-            });
-        }
-    }
-    </script>
+    
 </body>
 <script src="js/script.js"></script>
+<script>
+    let products = null;
+   fetch('products.json')
+       .then(response => response.json())
+       .then(data => {
+           products = data;
+           addDataToHTML();
+   })
 
+   function addDataToHTML(){
+   let listProductHTML = document.querySelector('.test');
+
+   {
+       products.forEach(product => {
+           let newProduct = document.createElement('li');
+           newProduct.href = './details.html?id=' + product.id;
+           newProduct.classList.add('card');
+           newProduct.innerHTML = 
+           `<a href="${newProduct.href}"><img src="${product.image}" alt="None">
+           <span>${product.name}</span>
+           <span class="price">${product.price} EGP</span></a>`;
+           listProductHTML.appendChild(newProduct);
+
+       });
+   }
+}
+</script>
 
 </html>
