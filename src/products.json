@@ -1,0 +1,47 @@
+[
+    {
+        "id": "1",
+        "name": "iPhone 14 Pro Max 256 Gb 5GmmWave",
+        "price": "68,000",
+        "image": "./images/Stolen.png",
+        "description": "The iPhone 14 Pro Max is the most powerful iPhone ever. It features a 6.7-inch Super Retina XDR display, the A16 Bionic chip, ProMotion technology, and a triple-camera system with Night mode. It also supports 5G mmWave for ultra-fast wireless speeds. With up to 256GB of storage, you can store all your photos, videos, and apps with ease. The iPhone 14 Pro Max is available in four stunning finishes: Graphite, Gold, Silver, and Sierra Blue. Get yours today and experience the future of iPhone.",
+        "type": "electronics"
+    },
+    {
+        "id": "2",
+        "name": "iPhone 15 Pro 256 Gb 5GmmWave",
+        "price": "150,000",
+        "image": "./images/Electronics/15pro.jpg",
+        "description": "The iPhone 15 Pro is the most powerful iPhone ever. It features a 6.7-inch Super Retina XDR display, the A17 Pro chip, ProMotion technology, and a triple-camera system with Night mode. It also supports 5G mmWave for ultra-fast wireless speeds. With up to 256GB of storage, you can store all your photos, videos, and apps with ease. The iPhone 15 Pro is available in four stunning finishes: Graphite, Gold, Silver, and Titainium. Get yours today and experience the future of iPhone.",
+        "type": "electronics"
+    },
+    {
+        "id": "3",
+        "name": "Xbox Series X 1TB SSD Console - Includes Wireless Controller - Up to 120 frames per second - 16GB RAM 1TB SSD - Experience True 4K Gaming Velocity Architecture",
+        "price": "34,000",
+        "image": "./images/Games/xbox.jpg",
+        "description": "The Xbox Series X is the most powerful console ever made. It features a custom 8-core AMD Zen 2 CPU, 16GB of GDDR6 RAM, and a 1TB SSD for lightning-fast load times. With support for up to 120 frames per second and true 4K gaming, you'll experience the best graphics and performance on any console. The Xbox Series X also features the new Velocity Architecture, which provides a massive leap in performance and speed. Get yours today and experience the future of gaming.",
+        "type": "games"
+    },
+    {
+        "id": "4",
+        "name": "iPhone 14 Pro Max 256 Gb 5GmmWave",
+        "price": "68,000",
+        "image": "./images/Stolen.png",
+        "description": "The iPhone 14 Pro Max is the most powerful iPhone ever. It features a 6.7-inch Super Retina XDR display, the A16 Bionic chip, ProMotion technology, and a triple-camera system with Night mode. It also supports 5G mmWave for ultra-fast wireless speeds. With up to 256GB of storage, you can store all your photos, videos, and apps with ease. The iPhone 14 Pro Max is available in four stunning finishes: Graphite, Gold, Silver, and Sierra Blue. Get yours today and experience the future of iPhone."
+    },
+    {
+        "id": "5",
+        "name": "iPhone 14 Pro Max 256 Gb 5GmmWave",
+        "price": "68,000",
+        "image": "./images/Stolen.png",
+        "description": "The iPhone 14 Pro Max is the most powerful iPhone ever. It features a 6.7-inch Super Retina XDR display, the A16 Bionic chip, ProMotion technology, and a triple-camera system with Night mode. It also supports 5G mmWave for ultra-fast wireless speeds. With up to 256GB of storage, you can store all your photos, videos, and apps with ease. The iPhone 14 Pro Max is available in four stunning finishes: Graphite, Gold, Silver, and Sierra Blue. Get yours today and experience the future of iPhone."
+    },
+    {
+        "id": "6",
+        "name": "iPhone 14 Pro Max 256 Gb 5GmmWave",
+        "price": "68,000",
+        "image": "./images/Stolen.png",
+        "description": "The iPhone 14 Pro Max is the most powerful iPhone ever. It features a 6.7-inch Super Retina XDR display, the A16 Bionic chip, ProMotion technology, and a triple-camera system with Night mode. It also supports 5G mmWave for ultra-fast wireless speeds. With up to 256GB of storage, you can store all your photos, videos, and apps with ease. The iPhone 14 Pro Max is available in four stunning finishes: Graphite, Gold, Silver, and Sierra Blue. Get yours today and experience the future of iPhone."
+    }
+]

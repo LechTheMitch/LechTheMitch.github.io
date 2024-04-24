@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lilita One">
+    <!-- <script src="src/index.js"></script> -->
 </head>
 
 <body>
@@ -53,58 +54,76 @@
     <!-- Hero Section Start -->
     <section class="hero">
         <div class="maxwidth">
-            <div class="carousel">
-                <img src="./images/Games/Game Image 2.jpeg" alt="">
+            <div class="detail">
+                <div class="image">
+                    <img src="">
+                </div>
+                <div class="content">
+                    <h1 class="name"></h1>
+                    <div class="price"></div>
+                    <div class="buttons">
+                        <button>Check Out</button>
+                        <button>Add To Cart 
+                            <span>
+                                <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="description"></div>
+                </div>
             </div>
-            <div class="circle_indicators">
-                <!-- مش هنعمل بيها حاجة دلوقتي-->
             </div>
         </div>
-    </section>
-
-    <!-- Categories Section Start -->
-    <section class="categories">
-        <div class="maxwidth">
-            <!-- Implement Jquery animations here-->
-            <ul class="cards maxwidth">
-                <li class="card"><a href="#"><img src="./images/Electronics/OIG1.jpeg" alt="#"></a></li>
-                <!-- هنكتب عند ال alt دي أسامي الكاتيجوريز-->
-                <li class="card"><a href="#"><img src="./images/Icon.png" alt="#"></a></li>
-                <li class="card"><a href="#"><img src="./images/Icon.png" alt="#"></a></li>
-                <li class="card"><a href="#"><img src="./images/Icon.png" alt="#"></a></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Featured Products Section Start -->
-    <section class="featured">
-        <div class="maxwidth">
-            <h2 class="primary10">Featured Products</h2>
-            <hr>
-            <ul class="cards test">
-                
-
-            </ul>
-            <div class="listProduct"></div>
-        </div>
-    </section>
-
-    <!-- Brands? Section Start -->
-    <section class="unknown">
-        <div class="maxwidth">
 
 
-        </div>
-    </section>
 
-    <!-- Footer Section Start -->
-    <section class="footer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!-- Footer Section Start -->
+       <section class="footer">
         <footer class="maxwidth">
             <div class="footer-l">
                 <div class="logo">
                     <div class="logo">
-                        <a href="index.html"><img src="./images/logo.svg" alt="Site Logo"><span
-                                class="primary10">Mil<span class="secondary10">ex</span></span></a>
+                        <a href="index.html"><img src="./images/logo.svg" alt="Site Logo"><span class="primary10">Mil<span
+                                    class="secondary10">ex</span></span></a>
                     </div>
                 </div>
                 <p>Copyright text here</p>
@@ -146,35 +165,46 @@
             </div>
         </footer>
     </section>
-    
+
 </body>
-<script src="js/script.js"></script>
 <script>
     let products = null;
-   fetch('products.json')
-       .then(response => response.json())
-       .then(data => {
-           products = data;
-           addDataToHTML();
-   })
+    // get datas from file json
+    fetch('products.json')
+        .then(response => response.json())
+        .then(data => {
+            products = data;
+            showDetail();
+    })
 
-   function addDataToHTML(){
-   let listProductHTML = document.querySelector('.test');
+    function showDetail(){
+// remove datas default from HTML
+    let detail = document.querySelector('.detail');
+    let listProduct = document.querySelector('.listProduct');
+    let productId =  new URLSearchParams(window.location.search).get('id');
+    let thisProduct = products.filter(value => value.id == productId)[0];
+    //if there is no product with id = productId => return to home page
+    if(!thisProduct){
+        window.location.href = "/";
+    }
 
-   {
-       products.forEach(product => {
-           let newProduct = document.createElement('li');
-           newProduct.href = './details.html?id=' + product.id;
-           newProduct.classList.add('card');
-           newProduct.innerHTML = 
-           `<a href="${newProduct.href}"><img src="${product.image}" alt="None">
-           <span>${product.name}</span>
-           <span class="price">${product.price} EGP</span></a>`;
-           listProductHTML.appendChild(newProduct);
+    detail.querySelector('.image img').src = thisProduct.image;
+    detail.querySelector('.name').innerText = thisProduct.name;
+    detail.querySelector('.price').innerText =thisProduct.price;
+    detail.querySelector('.description').innerText = thisProduct.description;
 
-       });
-   }
+
+    (products.filter(value => value.id != productId)).forEach(product => {
+        let newProduct = document.createElement('a');
+        newProduct.href = '/detail.html?id=' + product.id;
+        newProduct.classList.add('item');
+        newProduct.innerHTML = 
+        `<img src="${product.image}" alt="">
+        <h2>${product.name}</h2>
+        <div class="price">${product.price} EGP</div>`;
+        listProduct.appendChild(newProduct);
+    });
 }
-</script>
 
+</script>
 </html>
