@@ -34,8 +34,8 @@
                             </ul>
                         </li>
                         <div class="search">
-                        <input class="search" type="text"
-                            placeholder="Enter what you ‘re looking for you will surely find it on Milex">
+                            <input class="search" type="text"
+                                placeholder="Enter what you ‘re looking for you will surely find it on Milex">
                         </div>
                     </ul>
                 </nav>
@@ -44,7 +44,7 @@
                 <nav>
                     <!--دي هتتقلب onclick بالسكريبت-->
                     <ul>
-                        <li class="sign-up"><a href="#signup">Sign Up</a></li>
+                        <li class="sign-up"><a href="#" class="openPopup">Sign Up</a></li>
                         <li class="cart"><a href="#cart">Placeholder</a></li>
                         <li class="wish"><a href="#" onclick="$('html, body').animate({ 
                             scrollTop: $('html, body').get(0).scrollHeight 
@@ -72,7 +72,8 @@
         <div class="maxwidth">
             <!-- Implement Jquery animations here-->
             <ul class="cards maxwidth">
-                <li class="card"><a href="#"><img src="./images/Electronics/OIG1.jpeg" alt="#"></a></li>
+                <li class="card"><a href="electronics.html"><img src="./images/Electronics/OIG1.jpeg"
+                            alt="Electronics"></a></li>
                 <!-- هنكتب عند ال alt دي أسامي الكاتيجوريز-->
                 <li class="card"><a href="#"><img src="./images/Icon.png" alt="#"></a></li>
                 <li class="card"><a href="#"><img src="./images/Icon.png" alt="#"></a></li>
@@ -86,7 +87,7 @@
         <div class="maxwidth">
             <h2 class="primary10">Featured Products</h2>
             <hr>
-            <ul class="cards test">
+            <ul class="cards cardsLoader">
 
 
             </ul>
@@ -151,36 +152,52 @@
             </div>
         </footer>
     </section>
+    <!-- Sign Up Overlay -->
+    <div class="popupOverlay">
+        <div class="popupContent">
+            <!-- Sign Up Form -->
+            <form class="sign-up-form" action="">
+                <h5>Sign <span class="primary10">Up</span></h5>
+                <div>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div>
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Phone Number">
+                </div>
+                <div>
 
+                    <input type="text" placeholder="MM/DD/YYYY (Date of Birth)" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Create Account">
+                </div>
+                <div class="log-in">
+                    <a href="#" class="openPopupLogin">Log in</a>
+                </div>
+            </form>
+            <!-- Log In Overlay -->
+            <form class="log-in-form hide" action="">
+                <h5>Log <span class="primary10">In</span></h5>
+                <div>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Log in">
+                </div>
+                <div class="log-in">
+                    <a href="#" class="closePopupLogin">Sign Up</a>
+                </div>
+            </form>
+
+            <a href="#" class="closepopup">Close Popup</a>
+        </div>
+    </div>
 </body>
-<script src="js/script.js"></script>
 <script src="js/jquery-3.7.1.min.js"></script>
-<script>
-    let products = null;
-    fetch('products.json')
-        .then(response => response.json())
-        .then(data => {
-            products = data;
-            addDataToHTML();
-        })
-
-    function addDataToHTML() {
-        let listProductHTML = document.querySelector('.test');
-
-        {
-            products.forEach(product => {
-                let newProduct = document.createElement('li');
-                newProduct.href = './details.html?id=' + product.id;
-                newProduct.classList.add('card');
-                newProduct.innerHTML =
-                    `<a href="${newProduct.href}"><img src="${product.image}" alt="None">
-           <span>${product.name}</span>
-           <span class="price">${product.price} EGP</span></a>`;
-                listProductHTML.appendChild(newProduct);
-
-            });
-        }
-    }
-</script>
+<script src="js/script.js"></script>
 
 </html>
