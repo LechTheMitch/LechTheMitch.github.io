@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lilita One">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -32,8 +33,11 @@
                                 <li><a href="staters.html">placeholder</a></li>
                             </ul>
                         </li>
+                        <div class="search">
                         <input class="search" type="text"
-                            placeholder="Enter what you ‘re looking for you will surely find it on Placeholder Store">
+                            placeholder="Enter what you ‘re looking for you will surely find it on Milex">
+                        </div>
+                    </ul>
                 </nav>
             </div>
             <div class="header-r">
@@ -41,10 +45,11 @@
                     <!--دي هتتقلب onclick بالسكريبت-->
                     <ul>
                         <li class="sign-up"><a href="#signup">Sign Up</a></li>
-                        <li class="cart"><a href="#cart">Cart<img class="cart"
-                                    src="../node_modules/bootstrap-icons/icons/cart2.svg" alt="shopping_cart"></a></li>
-                        <li class="wish"><a href="#wishlist">Wishlist <img class="wish"
-                                    src="../node_modules/bootstrap-icons/icons/heart.svg" alt="wishlist_heart"></a></li>
+                        <li class="cart"><a href="#cart">Placeholder</a></li>
+                        <li class="wish"><a href="#" onclick="$('html, body').animate({ 
+                            scrollTop: $('html, body').get(0).scrollHeight 
+                        }, 1000);">Contact Us <i class="people"></i></a>
+                        </li>
                     </ul>
                 </nav>
         </header>
@@ -82,7 +87,7 @@
             <h2 class="primary10">Featured Products</h2>
             <hr>
             <ul class="cards test">
-                
+
 
             </ul>
             <div class="listProduct"></div>
@@ -146,35 +151,36 @@
             </div>
         </footer>
     </section>
-    
+
 </body>
 <script src="js/script.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
 <script>
     let products = null;
-   fetch('products.json')
-       .then(response => response.json())
-       .then(data => {
-           products = data;
-           addDataToHTML();
-   })
+    fetch('products.json')
+        .then(response => response.json())
+        .then(data => {
+            products = data;
+            addDataToHTML();
+        })
 
-   function addDataToHTML(){
-   let listProductHTML = document.querySelector('.test');
+    function addDataToHTML() {
+        let listProductHTML = document.querySelector('.test');
 
-   {
-       products.forEach(product => {
-           let newProduct = document.createElement('li');
-           newProduct.href = './details.html?id=' + product.id;
-           newProduct.classList.add('card');
-           newProduct.innerHTML = 
-           `<a href="${newProduct.href}"><img src="${product.image}" alt="None">
+        {
+            products.forEach(product => {
+                let newProduct = document.createElement('li');
+                newProduct.href = './details.html?id=' + product.id;
+                newProduct.classList.add('card');
+                newProduct.innerHTML =
+                    `<a href="${newProduct.href}"><img src="${product.image}" alt="None">
            <span>${product.name}</span>
            <span class="price">${product.price} EGP</span></a>`;
-           listProductHTML.appendChild(newProduct);
+                listProductHTML.appendChild(newProduct);
 
-       });
-   }
-}
+            });
+        }
+    }
 </script>
 
 </html>
