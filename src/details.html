@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -33,49 +33,47 @@
                                 <li><a href="staters.html">placeholder</a></li>
                             </ul>
                         </li>
-                        <input class="search" type="text"
-                            placeholder="Enter what you ‘re looking for you will surely find it on Placeholder Store">
+                        <div class="search">
+                            <input class="search" type="text"
+                                placeholder="Enter what you ‘re looking for you will surely find it on Milex">
+                        </div>
+                    </ul>
                 </nav>
             </div>
             <div class="header-r">
                 <nav>
                     <!--دي هتتقلب onclick بالسكريبت-->
                     <ul>
-                        <li class="sign-up"><a href="#signup">Sign Up</a></li>
-                        <li class="cart"><a href="#cart">Cart<img class="cart"
-                                    src="../node_modules/bootstrap-icons/icons/cart2.svg" alt="shopping_cart"></a></li>
-                        <li class="wish"><a href="#wishlist">Wishlist <img class="wish"
-                                    src="../node_modules/bootstrap-icons/icons/heart.svg" alt="wishlist_heart"></a></li>
+                        <li class="sign-up"><a href="#" class="openPopup">Sign Up</a></li>
+                        <li class="cart"><a href="#cart">Placeholder</a></li>
+                        <li class="wish"><a href="#" onclick="$('html, body').animate({ 
+                        scrollTop: $('html, body').get(0).scrollHeight 
+                    }, 1000);">Contact Us <i class="people"></i></a>
+                        </li>
                     </ul>
                 </nav>
         </header>
     </section>
 
-    <!-- Hero Section Start -->
-    <section class="hero">
+    <!-- Details Section Start -->
+    <section class="details">
         <div class="maxwidth">
             <div class="detail">
                 <div class="image">
                     <img src="">
                 </div>
                 <div class="content">
-                    <h1 class="name"></h1>
-                    <div class="price"></div>
-                    <div class="buttons">
-                        <button>Check Out</button>
-                        <button>Add To Cart 
-                            <span>
-                                <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
-                                </svg>
-                            </span>
-                        </button>
+                    <h2 class="name"></h2>
+                    <span class="price"></span>
+                    <div class="buy">
+                        <a href="#">Buy Now</a>
                     </div>
                     <div class="description"></div>
                 </div>
             </div>
-            </div>
         </div>
+        </div>
+    </section>
 
 
 
@@ -116,14 +114,14 @@
 
 
 
-       <!-- Footer Section Start -->
-       <section class="footer">
+    <!-- Footer Section Start -->
+    <section class="footer">
         <footer class="maxwidth">
             <div class="footer-l">
                 <div class="logo">
                     <div class="logo">
-                        <a href="index.html"><img src="./images/logo.svg" alt="Site Logo"><span class="primary10">Mil<span
-                                    class="secondary10">ex</span></span></a>
+                        <a href="index.html"><img src="./images/logo.svg" alt="Site Logo"><span
+                                class="primary10">Mil<span class="secondary10">ex</span></span></a>
                     </div>
                 </div>
                 <p>Copyright text here</p>
@@ -175,36 +173,25 @@
         .then(data => {
             products = data;
             showDetail();
-    })
+        })
 
-    function showDetail(){
-// remove datas default from HTML
-    let detail = document.querySelector('.detail');
-    let listProduct = document.querySelector('.listProduct');
-    let productId =  new URLSearchParams(window.location.search).get('id');
-    let thisProduct = products.filter(value => value.id == productId)[0];
-    //if there is no product with id = productId => return to home page
-    if(!thisProduct){
-        window.location.href = "/";
+    function showDetail() {
+        // remove datas default from HTML
+        let detail = document.querySelector('.detail');
+        let listProduct = document.querySelector('.listProduct');
+        let productId = new URLSearchParams(window.location.search).get('id');
+        let thisProduct = products.filter(value => value.id == productId)[0];
+        //if there is no product with id = productId => return to home page
+        if (!thisProduct) {
+            window.location.href = "/";
+        }
+
+        detail.querySelector('.image img').src = thisProduct.image;
+        detail.querySelector('.name').innerText = thisProduct.name;
+        detail.querySelector('.price').innerText = thisProduct.price + ' EGP';
+        detail.querySelector('.description').innerText = thisProduct.description;
     }
 
-    detail.querySelector('.image img').src = thisProduct.image;
-    detail.querySelector('.name').innerText = thisProduct.name;
-    detail.querySelector('.price').innerText =thisProduct.price;
-    detail.querySelector('.description').innerText = thisProduct.description;
-
-
-    (products.filter(value => value.id != productId)).forEach(product => {
-        let newProduct = document.createElement('a');
-        newProduct.href = '/detail.html?id=' + product.id;
-        newProduct.classList.add('item');
-        newProduct.innerHTML = 
-        `<img src="${product.image}" alt="">
-        <h2>${product.name}</h2>
-        <div class="price">${product.price} EGP</div>`;
-        listProduct.appendChild(newProduct);
-    });
-}
-
 </script>
+
 </html>
