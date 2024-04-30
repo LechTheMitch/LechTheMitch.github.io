@@ -1,0 +1,530 @@
+body {
+    font-family: "Roboto", Helvetica, sans-serif;
+    color: #0C0102;
+     background-image: url("../pics/black.jpg"); 
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+::selection{
+    background-color: gray;
+    color: rgb(18, 16, 16);
+}
+
+.top{
+    font-family: "Rubik", Helvetica, sans-serif;
+    font-weight: lighter;
+    margin-left: 600px;
+}
+
+
+
+
+
+
+.logo img {
+    height: 186px;
+    width: 205px;
+    margin-left: -55px;
+    margin-right: -48px;
+    margin-top: -45px;
+    margin-bottom: -45px;
+}
+
+
+.logo a {
+    display:inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "Lilita One", Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #0C0102;
+}
+
+header{
+    position: relative;
+}
+
+nav ul li {
+    float: left;
+    margin-left:15px ;
+    list-style-type: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(159, 157, 153);
+    position: relative;
+    left: 130px;
+    bottom: 100px;
+    font-size: 18px;
+}
+
+
+.container{
+
+    width: 310px;
+    height: 200px;
+    background-color: gray;
+    margin-left: 600px;
+    border-radius: 15px;
+    box-shadow: 20px 20px 30px rgb(red, green, blue) ;
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: -150px;
+
+}
+.container::-webkit-scrollbar{
+    display:none;
+}
+.container form{
+    margin-left: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.l i {
+    position: absolute;
+    top: 13px;
+    left: -29px;
+}
+.link0{
+    text-decoration: none;
+    color: black;
+}
+.product{
+    margin-bottom: 20px;
+}
+
+.hero{
+    background-color: #80808014;
+    border-radius: 6px;
+
+}
+section.hero div.maxwidth {
+    display:block;
+    padding: 50px 0;
+}
+section.hero div.Game-Poster1 {
+    /* max-width: 1120px; */
+    max-width: 1130px;
+    background-color: #80808000;
+    height: auto;
+    border-radius: 8px;
+}
+div.Game-Poster1 img {
+    max-width: 1120px;
+    display: block;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    max-height: 300px;
+    height: 100%;
+    margin-left: -180px;
+}
+
+
+section.hero div.Game-Poster2 {
+    /* max-width: 1120px; */
+    max-width: 1130px;
+    background-color: #80808000;
+    height: auto;
+    border-radius: 8px;
+}
+div.Game-Poster2 img {
+    max-width: 1120px;
+    display: inline;
+    /* width: min-content; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    /* max-height: 300px;
+    height: 100%; */
+    margin-left: -180px;
+    position: relative;
+    top: -300px;
+    left: 320px;
+    width: 260px;
+    height: 300px;
+    float: left;
+
+}
+
+section.hero div.Game-Poster3 {
+    /* max-width: 1120px; */
+    max-width: 1130px;
+    background-color: #80808000;
+    height: auto;
+    border-radius: 8px;
+}
+div.Game-Poster3 img {
+    max-width: 1120px;
+    display: inline;
+    /* width: min-content; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    /* max-height: 300px;
+    height: 100%; */
+    margin-left: 20px;
+    position: relative;
+    top: -350px;
+    left: 320px;
+    width: 300px;
+    height: 300px;
+    float: left;
+
+}
+
+section.hero div.Game-Poster4 {
+    /* max-width: 1120px; */
+    max-width: 1130px;
+    background-color: #80808000;
+    height: auto;
+    border-radius: 8px;
+}
+div.Game-Poster4 img {
+    max-width: 1120px;
+    display: inline;
+    /* width: min-content; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    /* max-height: 300px;
+    height: 100%; */
+    margin-left: 20px;
+    position: relative;
+    top: -350px;
+    left: 320px;
+    width: 250px;
+    height: 300px;
+    float: left;
+
+}
+
+section.hero div.Game-Poster5 {
+    /* max-width: 1120px; */
+    max-width: 1130px;
+    background-color: #80808000;
+    height: auto;
+    border-radius: 8px;
+}
+div.Game-Poster5 img {
+    max-width: 1120px;
+    display: inline;
+    /* width: min-content; */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    /* max-height: 300px;
+    height: 100%; */
+    margin-left: 20px;
+    position: relative;
+    top: -650px;
+    left: 1180px;
+    width: 298px;
+    height: 300px;
+    float: left;
+
+}
+
+
+.maxwidth {
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+.game h1 {
+position: relative;
+left: -338px;
+font-weight: lighter;
+
+}
+
+     h2 {
+    text-align: center;
+    font-weight: lighter;
+    }
+    
+
+    .more {
+        width: 500px;
+        height: 500px;
+        margin-left: -370px;
+        border-radius: 9px;
+
+    }
+    hr{
+        background-color: rgba(128, 128, 128, 0.555);
+        width: 1517px;
+        height: 3px;
+         margin: 0px 400px 0px -6px ;
+        border: none; 
+    }
+    
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 9px 200px;
+}
+
+.games img {
+    width: 50%;
+    height: 50%;
+    margin-left: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+}
+   .games video{
+    margin-left: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    height: 50%;
+    border-radius: 9px;
+}
+
+
+.rate{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(128, 128, 128, 0.189);
+    margin-left: 650px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.rate p {
+    position: relative;
+    left: -150px;
+    bottom: -65px;
+    color: grey;
+}
+
+.rate p {
+    scroll-behavior: smooth;
+    
+}
+
+/* game 1 */
+
+.game1 p{
+    color: rgb(150, 103, 197);
+}
+
+.game1 img{
+    border: 2px solid rgb(170, 116, 223);
+
+}
+.game1 video {
+    border: 2px solid rgb(170, 116, 223);
+
+}
+
+.game1 h2{
+    color: rgb(131, 23, 238);
+}
+
+.game1 .rate p{
+    color: grey;
+}
+
+
+
+/* game 2 */
+
+
+.game2 h2{
+    color: rgb(198, 16, 16);
+}
+.game2 p{
+    color: rgba(255, 0, 0, 0.7);
+}
+
+
+.game2 img{
+
+    border: 2px solid rgba(255, 0, 0, 0.471);
+
+}
+
+.game2 video{
+
+    border: 2px solid rgba(255, 0, 0, 0.471);
+
+
+}
+
+/* game 3 */
+
+.game3 h2{
+    color: rgb(215 154 0);
+}
+.game3 p{
+    color:rgb(215 154 0);
+}
+
+.game3 img{
+    border: 2px solid rgb(156, 137, 32);
+}
+.game3 video{
+    border: 2px solid rgb(156, 137, 32);
+
+}
+
+.game3 .rate p{
+color: grey;
+}
+
+
+/* game 4 */
+
+.game4 h2{
+    color:rgba(0, 196, 0, 0.923);
+}
+
+.game4 p {
+    color:rgba(0, 196, 0, 0.786) ;
+}
+
+.game4 img{
+    border: rgb(13, 202, 13) solid 2px;
+}
+
+.game4 video{
+    border: rgb(13, 202, 13) solid 2px;
+
+}
+.game4 .rate p {
+    color: grey;
+} 
+
+/* game 5 */
+
+.game5 h2 {
+    color: rgb(153 147 147);
+}
+
+.game5 img{
+    border: 2px rgb(153 147 147) solid;
+}
+
+.game5 p {
+
+   color:  rgb(153 147 147);
+}
+.game5 video{
+    border: 2px rgb(153 147 147) solid;
+
+}
+
+
+/* Table */
+
+.table0 p {
+    color: gray;
+
+}
+
+
+table{
+    width: 50%;
+      margin-left:365px; 
+     margin-top: 40px;
+    border-spacing: 0px; 
+    margin-bottom: 20px
+}  
+
+
+table tbody td {
+    padding: 15px;
+    background-color: rgba(128, 128, 128, 0.438);
+    /* border: 2px solid rgb(255, 250, 250); */
+}
+
+
+
+table thead td {
+    color: rgb(147, 142, 154);
+    background-color: rgba(97, 95, 99, 0.334);
+    padding: 15px;
+    font-size: 17px
+ 
+}
+
+table td {
+    border: 2px solid rgba(149, 149, 149, 0.326);
+}
+
+/* footer */
+
+
+footer .f{
+    border-radius: 9px;
+    margin-top: 10px;
+    width :100%;
+    height: 400px;
+    background-color: rgba(141, 140, 140, 0.151);
+}
+
+
+ 
+.f{
+     position: relative;
+    overflow: hidden; 
+
+}
+
+.h2-cont{
+    position: absolute;
+    right: 300px;
+    bottom: 259px; 
+    font-size: 22px;
+}
+
+.cont{
+     position:relative;
+    bottom: -140px;
+    left: 410px;
+    
+}
+
+
+
+.about{
+     position: relative;
+    top: -10px; 
+
+}
+.about h2 {
+    font-size: 22px;
+}
+
+.logof{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -224px;
+} 
+.op{
+    position: absolute;
+    bottom: -7710px;
+    left: -150px;
+    font-size: 20px
+
+}
+
+.MILEX{
+    text-decoration: none;
+    position: absolute;
+    bottom: -7730px;
+    left: 170px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+
+}

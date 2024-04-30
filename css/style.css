@@ -704,3 +704,6 @@ section.contact {
     padding: 8px 16px;
     border: none;
 }
+li.card img{
+    object-fit: cover;
+}
