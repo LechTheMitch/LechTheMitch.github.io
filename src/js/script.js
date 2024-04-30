@@ -41,3 +41,15 @@ function addDataToHTML() {
         });
     }
 }
+
+//Owl Carousel
+$(document).ready(function () {
+    let one = $(".carousel");
+    owlCarousel({
+        items: 1,
+        margin: 20,
+        dots: false,
+        nav: true,
+        loop: true,
+    })
+})
