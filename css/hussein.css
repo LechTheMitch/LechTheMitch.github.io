@@ -528,3 +528,76 @@ footer .f{
     font-size: 25px;
 
 }
+div.popupOverlay{
+    z-index: 12;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:100%;
+    visibility: hidden;
+}
+div.popupContent{
+    background-color: rgb(110, 107, 107);
+    border-radius: 20px;
+    padding: 24px;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 150px;
+    left: 25%;
+    visibility: hidden;
+}
+div.popupOverlay.active{
+    visibility: visible;
+}
+div.popupContent.active{
+    visibility: visible;
+}
+.popupContent div{
+    margin-bottom: 16px;
+    display: flex;
+    gap: 24px;
+}
+.popupContent input[type="text"], .popupContent input[type="date"], .popupContent input[type="email"], .popupContent input[type="password"]{
+    background-color: #F6F6F6;
+    border: solid 1px #E3E3E3;
+    color: #A3A3A3;
+    padding: 8px 12px;
+    max-height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 50%;
+}
+.popupContent input[type="submit"] {
+    background-color: rgb(224, 224, 224);
+    color: rgb(29, 29, 29);
+    font-family: "Rubik", Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 16px;
+    padding: 8px 16px;
+    border: none;
+}
+.popupContent div.log-in a{
+    display: inline;
+    color: rgb(254, 254, 254);
+    font-family: "Rubik", Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 16px;
+    padding: 8px 16px;
+    border: 2px solid rgb(254, 254, 254);
+}
+.popupContent div.submit{
+    justify-content: end;
+}
+.popupContent div.log-in{
+    justify-content: start;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: flex;
+}
