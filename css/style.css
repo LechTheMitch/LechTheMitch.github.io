@@ -361,6 +361,8 @@ section.categories .cards a{
 section.categories .cards a:hover{
     background-color: #F2E7E7;
     border-radius: 8px;
+    color: #FFB157;
+    transform: scale(1.5);
 
 }
 section.categories .cards img{
