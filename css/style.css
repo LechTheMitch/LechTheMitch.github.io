@@ -710,3 +710,63 @@ section.contact {
 li.card img{
     object-fit: cover;
 }
+div.branches div.blog-card ul li {
+    padding-left: 32px;
+    margin-bottom: 16px;
+    line-height: 32px;
+    font-size: 18px;
+}
+div.branches div.blog-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+div.branches {
+    margin-bottom: 64px;
+}
+
+div.branches h4 {
+    text-align: center;
+}
+
+div.branches div.blog-card {
+    border-radius: 10px;
+}
+
+div.branches div.blog-card h5 {
+    background-color: #FF9D2D;
+    color: #7A0D10;
+    padding: 16px;
+    border-radius: 10px 10px 0 0;
+}
+
+div.branches div.blog-card ul {
+    padding: 16px;
+}
+div.blog-card {
+    width: 360px;
+    background-color: #E3E3E3;
+}
+
+div.blog-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+div.blog-card h6 {
+    font-size: 12px;
+    padding-left: 20px;
+    background: url(../images/calendar1.svg)left 7px no-repeat;
+}
+section.story{
+    margin-top: 16px;
+}
+section.story div.maxwidth p{
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    margin-bottom: 24px;
+  
+}
