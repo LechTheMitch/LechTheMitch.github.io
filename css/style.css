@@ -758,7 +758,7 @@ div.blog-card img {
 div.blog-card h6 {
     font-size: 12px;
     padding-left: 20px;
-    background: url(../images/calendar1.svg)left 7px no-repeat;
+    /* background: url(../images/calendar1.svg)left 7px no-repeat; */
 }
 section.story{
     margin-top: 16px;
