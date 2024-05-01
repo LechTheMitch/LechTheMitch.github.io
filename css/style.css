@@ -456,6 +456,7 @@ footer h5 {
     font-weight: 700;
     border-radius: 8px;
     max-height: min-content;
+    min-height: 272px;
     font-family: "Rubik", Helvetica, sans-serif;
 }
 .featured .cards a:hover{
