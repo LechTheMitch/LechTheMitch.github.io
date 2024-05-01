@@ -1,29 +1,32 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
-   
-    background-size: cover; 
+
+    background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    color:white;
+    color: white;
     text-align: center;
 }
-caption{
-    color:cornflowerblue;
+
+caption {
+    color: cornflowerblue;
     font-size: x-large;
 }
-td,th{
+
+td,
+th {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: left;
-    background-color:#3a6cf4;
-    color:black;
+    background-color: #3a6cf4;
+    color: black;
 }
 
 img {
@@ -36,13 +39,13 @@ img {
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
-    color:rgb(80, 55, 226);
+    color: rgb(80, 55, 226);
 }
 
 p {
     line-height: 1.5;
     margin-bottom: 20px;
-    color:black;
+    color: black;
 }
 
 /* Sign-in Form Styling */
@@ -76,24 +79,29 @@ p {
     border-radius: 4px;
     cursor: pointer;
 }
-.one{
-    color:white;
-        background:#3a6cf4;
-        padding: 5px; 
-        width: 70%;
-       margin: auto;
-       border-width: 20px ;
-      background-image: url(images.jpeg);
+
+.one {
+    color: white;
+    background: #3a6cf4;
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+    border-width: 20px;
+    background-image: url(images.jpeg);
 }
-.three{
-    color:black;
+
+.three {
+    color: black;
 }
+
 h3 {
-    color:white;
+    color: white;
 }
-.two{
-    color:black;
+
+.two {
+    color: black;
 }
+
 ul {
     /* Reset default list styles */
 
@@ -126,60 +134,115 @@ ul {
 }
 
 
-header {
-background-color: #f0f0f0;
-width: 100%;
-position: fixed;
-z-index: 999;
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
+
+
 .logo {
-    color:#3a6cf4;
+    color: #3a6cf4;
     text-transform: uppercase;
     text-decoration: none;
-    font-size:1.8em;
+    font-size: 1.8em;
     font-weight: 700;
 }
-nav{
-    color:#3a6cf4;
-    text-decoration:none;
-    font-size:1.1em;
-    font-weight: 500;
-    padding-left: 30px;
+
+
+
+header {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1180px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    width: 100%;
+    max-height: 70px;
 }
-.title{
+
+.logo img {
+    height: 40px;
+}
+
+.logo a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "Lilita One", Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.primary10 {
+    color: #3a6cf4;
+}
+.secondary10 {
+    color: #d7d2d2;
+}
+
+.header-l nav ul {
+    display: inline-block;
+}
+
+.header-l nav ul li {
+    display: inline-block;
+    margin-right: 16px;
+    position: relative;
+}
+
+header.header-l {
+    display: flex;
+    align-items: center;
+}
+
+li.parent a {
+    color: #7A0D10;
+    background-color: #E68D29;
+    border: 2px solid #E68D29;
+    border-radius: 5px;
+    padding: 8px 16px;
+    max-height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Rubik", Helvetica, sans-serif;
+}
+.logo a{
+    text-decoration: none;
+}
+.title {
     display: flex;
     justify-content: center;
-    color:#00c3ff;
-    font-size:2.2em;
+    color: #00c3ff;
+    font-size: 2.2em;
     margin-bottom: 30px;
 }
-.content{
+
+.content {
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
-.card{
+
+.card {
     background-color: white;
     width: 21.25em;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
     border-radius: 10px;
     padding: 25px;
-    margin:25px;
+    margin: 25px;
 }
+
 .card:hover {
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
-.services{
+
+.services {
     background-image: url(services.jpeg);
 }
-.cards{
+
+.cards {
     background-image: url(computers.jpeg);
 }
-video{
+
+video {
     justify-content: center;
-    position:relative;
-    padding:125px;
+    position: relative;
+    padding: 125px;
 }

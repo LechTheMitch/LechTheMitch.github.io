@@ -9,21 +9,36 @@
    <link rel="stylesheet" href="css/rtl.css">
 </head>
 <body>
-    <header>
-        <a href="*" class="logo" >MILEX</a>
-        <nav class="nav">
-            <a href="#Services" >Services</a>
-            <a href="#details">Details</a>
-        </nav>
-    </header>
-    <section class="main"><br><br>
-        <div class="one">
-            <span><h5>Hello to MILEX</h5></span>
-            <h2>Electronics Department</h2>
-            <h3>All the devices you need</h3>
-        
-        </div>
-            </section>
+    <!-- Header Section Start -->
+    <section>
+        <header>
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo.svg" alt="site_logo"><span class="primary10">Mil<span
+                            class="secondary10">ex</span></span></a>
+            </div>
+            <div class="header-l">
+                <nav>
+                    <ul>
+                        <li class="parent"><a href="#">Cairo <img src="./images/Asset 1.svg"
+                                    alt="logo_of_the_recepient_country"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-r">
+                <nav>
+                    <!--دي هتتقلب onclick بالسكريبت-->
+                    <ul>
+                        <li class="sign-up"><a href="#" class="openPopup">Sign Up</a></li>
+                        <li class="cart"><a href="#cart">Placeholder</a></li>
+                        <li class="wish"><a href="#" onclick="$('html, body').animate({ 
+                            scrollTop: $('html, body').get(0).scrollHeight 
+                        }, 1000);">Contact Us <i class="people"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+        </header>
+    </section>
 <h3 class="three">Our products</h3>
     <ul>
         <li>Laptops</li>
