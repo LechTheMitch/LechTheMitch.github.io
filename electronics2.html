@@ -9,6 +9,27 @@
    <link rel="stylesheet" href="css/rtl.css">
 </head>
 <body>
+        <!-- Header Section Start -->
+        <section>
+            <header>
+                <div class="logo">
+                    <a href="index.html"><img src="./images/logo.svg" alt="site_logo"><span class="primary10">Mil<span
+                                class="secondary10">ex</span></span></a>
+                </div>
+                
+                    <nav>
+                        <!--دي هتتقلب onclick بالسكريبت-->
+                        <ul>
+                            <li class="sign-up"><a href="#" class="openPopup">Sign Up</a></li>
+                            <li class="cart"><a href="about.html">About Us</a></li>
+                            <li class="wish"><a href="#" onclick="$('html, body').animate({ 
+                                scrollTop: $('html, body').get(0).scrollHeight 
+                            }, 1000);">Contact Us <i class="people"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+            </header>
+        </section>
     <h1><u>Labtobs</u></h1>
     <p><br>We have all the devices available in the local and international market, and we will show you the most important ones </p>
     <section class="cards" id="serv">
@@ -103,5 +124,99 @@
     <br>
     <br>
     <br>
+    <section class="footer">
+        <footer class="maxwidth">
+            <div class="footer-l">
+                <div class="logo">
+                    <div class="logo">
+                        <a href="index.html"><img src="./images/logo.svg" alt="Site Logo"><span
+                                class="primary10">Mil<span class="secondary10">ex</span></span></a>
+                    </div>
+                </div>
+                <p>Copyright text here</p>
+                <div class="social">
+                    <img src="../node_modules/bootstrap-icons/icons/facebook.svg" alt="Facebook"><img
+                        src="../node_modules/bootstrap-icons/icons/instagram.svg" alt="Instagram"><img
+                        src="../node_modules/bootstrap-icons/icons/twitter-x.svg" alt="Twitter">
+                </div>
+            </div>
+            <div class="footer-m">
+                <h5>Sitemap</h5>
+                <div class="brands_sitemap">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#" class="openPopup">Sign Up</a></li>
+                        <li><a href="#" class="openPopup openPopupLogin">Log In</a></li>
+                        <li><a href="#">Placeholder</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="electronics.html">Electronics</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="games2.html">Consoles</a></li>
+                        <li><a href="fashion.html">Clothes</a></li>
+                        <li><a href="groceries.html">Supermarket</a></li>
+                        <li><a href="watch.html">Watches</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-r">
+                <h5>Contact Us</h5>
+                <ul>
+                    <li class="web-support"><strong class="primary12">Chat:</strong> <a href="#">milex.com/support</a>
+                    </li>
+                    <li class="email"><strong class="primary12">Email:</strong> support@placeholder.com</li>
+                    <li class="phone"><strong class="primary12">Phone:</strong> 16792</li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+    <!-- Sign Up Overlay -->
+    <div class="popupOverlay">
+        <div class="popupContent">
+            <!-- Sign Up Form -->
+            <form class="sign-up-form" action="">
+                <h5>Sign <span class="primary10">Up</span></h5>
+                <div>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div>
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Phone Number">
+                </div>
+                <div>
+    
+                    <input type="text" placeholder="MM/DD/YYYY (Date of Birth)" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Create Account">
+                </div>
+                <div class="log-in">
+                    <a href="#" class="openPopupLogin">Log in</a>
+                </div>
+            </form>
+            <!-- Log In Overlay -->
+            <form class="log-in-form hide" action="">
+                <h5>Log <span class="primary10">In</span></h5>
+                <div>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Log in">
+                </div>
+                <div class="log-in">
+                    <a href="#" class="closePopupLogin">Sign Up</a>
+                </div>
+            </form>
+    
+            <a href="#" class="closepopup">Close Popup</a>
+        </div>
+    </div>
 </body>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
 </html>
