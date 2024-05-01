@@ -418,21 +418,24 @@ footer h5 {
     padding-left: 24px;
 }
 .footer-r ul li.web-support {
-    background: url(../../node_modules/bootstrap-icons/icons/globe.svg) left 5px no-repeat;
+    background: url(../images/icons/globe.svg) left 5px no-repeat;
 }
 .web-support a{
     color: #0C0102;
 
 }
 .footer-r ul li.email {
-    background: url(../../node_modules/bootstrap-icons/icons/envelope-at-fill.svg) left 5px no-repeat;
+    background: url(../images/icons/envelope-at-fill.svg) left 5px no-repeat;
 }
 .footer-r ul li.phone {
-    background: url(../../node_modules/bootstrap-icons/icons/telephone-fill.svg) left 5px no-repeat;
+    background: url(../images/icons/telephone-fill.svg) left 5px no-repeat;
 }
 .featured h2 {
     margin-top: 32px;
     text-align: center;
+}
+.featured{
+    margin-bottom: 40px;
 }
 .featured hr{
     background-color: #FF9D2D;
