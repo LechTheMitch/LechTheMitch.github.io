@@ -281,7 +281,7 @@ p{
     margin-bottom: 10px;
     border-radius: 9px;
 }
-   .games video{
+   .games iframe{
     margin-left: 350px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -321,7 +321,7 @@ p{
     border: 2px solid rgb(170, 116, 223);
 
 }
-.game1 video {
+.game1 iframe {
     border: 2px solid rgb(170, 116, 223);
 
 }
@@ -353,7 +353,7 @@ p{
 
 }
 
-.game2 video{
+.game2 iframe{
 
     border: 2px solid rgba(255, 0, 0, 0.471);
 
@@ -372,7 +372,7 @@ p{
 .game3 img{
     border: 2px solid rgb(156, 137, 32);
 }
-.game3 video{
+.game3 iframe{
     border: 2px solid rgb(156, 137, 32);
 
 }
@@ -396,7 +396,7 @@ color: grey;
     border: rgb(13, 202, 13) solid 2px;
 }
 
-.game4 video{
+.game4 iframe{
     border: rgb(13, 202, 13) solid 2px;
 
 }
@@ -418,7 +418,7 @@ color: grey;
 
    color:  rgb(153 147 147);
 }
-.game5 video{
+.game5 iframe{
     border: 2px rgb(153 147 147) solid;
 
 }
