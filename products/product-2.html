@@ -43,7 +43,7 @@
                 <nav>
                     <!--دي هتتقلب onclick بالسكريبت-->
                     <ul>
-                        <li class="sign-up"><a href="#signup">Sign Up</a></li>
+                        <li class="sign-up"><a href="#signup" class="openPopup">Sign Up</a></li>
                         <li class="cart"><a href="../about.html">About Us</a></li>
                         <li class="wish"><a href="#" onclick="$('html, body').animate({ 
                             scrollTop: $('html, body').get(0).scrollHeight 
@@ -103,11 +103,56 @@
         </div>
     </footer>
 
+    <!-- Sign Up Overlay -->
+    <div class="popupOverlay">
+        <div class="popupContent">
+            <!-- Sign Up Form -->
+            <form class="sign-up-form" action="">
+                <h5>Sign <span class="primary10">Up</span></h5>
+                <div>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div>
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Phone Number">
+                </div>
+                <div>
 
+                    <input type="text" placeholder="MM/DD/YYYY (Date of Birth)" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Create Account">
+                </div>
+                <div class="log-in">
+                    <a href="#" class="openPopupLogin">Log in</a>
+                </div>
+            </form>
+            <!-- Log In Overlay -->
+            <form class="log-in-form hide" action="">
+                <h5>Log <span class="primary10">In</span></h5>
+                <div>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Log in">
+                </div>
+                <div class="log-in">
+                    <a href="#" class="closePopupLogin">Sign Up</a>
+                </div>
+            </form>
+
+            <a href="#" class="closepopup">Close Popup</a>
+        </div>
+    </div>
 </body>
 <script>
     function temp() {
         document.querySelector('.button').innerHTML = 'Added to cart';
     }
 </script>
+<script src="../js/jquery-3.7.1.min.js"></script>
+<script src="../js/script.js"></script>
 </html>
