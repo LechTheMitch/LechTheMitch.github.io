@@ -16,14 +16,13 @@
     <section>
         <header>
             <div class="logo">
-                <a href="index.html"><img src="../images/fashion/logo.svg" alt="site_logo"><span class="primary10">Mil<span
-                            class="secondary10">ex</span></span></a>
+                <a href="index.html"><img src="../images/fashion/logo.svg" alt="site_logo"><span
+                        class="primary10">Mil<span class="secondary10">ex</span></span></a>
             </div>
             <div class="header-l">
                 <nav>
                     <ul>
-                        <li class="parent"><a href="#">Cairo <img
-                                    src="../images/fashion/Asset 1.svg"
+                        <li class="parent"><a href="#">Cairo <img src="../images/fashion/Asset 1.svg"
                                     alt="logo_of_the_recepient_country"></a>
                             <ul class="child">
                                 <li><a href="staters.html">placeholder</a></li>
@@ -43,8 +42,8 @@
                 <nav>
                     <!--دي هتتقلب onclick بالسكريبت-->
                     <ul>
-                        <li class="sign-up"><a href="#signup">Sign Up</a></li>
-                        <li class="cart"><a href="#cart">Placeholder</a></li>
+                        <li class="sign-up"><a href="#signup" class="openPopup">Sign Up</a></li>
+                        <li class="cart"><a href="../about.html">About Us</a></li>
                         <li class="wish"><a href="#" onclick="$('html, body').animate({ 
                             scrollTop: $('html, body').get(0).scrollHeight 
                         }, 1000);">Contact Us <i class="people"></i></a>
@@ -68,7 +67,7 @@
             </div>
             <label class="quantity">quantity </label>
             <input type="number" class="quantity" name="quantity" min="1" max="100">
-            <a href="#" class="button">Buy Now</a>
+            <a href="#" class="button" onclick="temp()">Buy Now</a>
         </div>
 
     </section>
@@ -102,8 +101,58 @@
             <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
         </div>
     </footer>
+    <!-- Sign Up Overlay -->
+    <div class="popupOverlay">
+        <div class="popupContent">
+            <!-- Sign Up Form -->
+            <form class="sign-up-form" action="">
+                <h5>Sign <span class="primary10">Up</span></h5>
+                <div>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div>
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Phone Number">
+                </div>
+                <div>
 
+                    <input type="text" placeholder="MM/DD/YYYY (Date of Birth)" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Create Account">
+                </div>
+                <div class="log-in">
+                    <a href="#" class="openPopupLogin">Log in</a>
+                </div>
+            </form>
+            <!-- Log In Overlay -->
+            <form class="log-in-form hide" action="">
+                <h5>Log <span class="primary10">In</span></h5>
+                <div>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Log in">
+                </div>
+                <div class="log-in">
+                    <a href="#" class="closePopupLogin">Sign Up</a>
+                </div>
+            </form>
+
+            <a href="#" class="closepopup">Close Popup</a>
+        </div>
+    </div>
 
 </body>
+<script>
+    function temp() {
+        document.querySelector('.button').innerHTML = 'Added to cart';
+    }
+</script>
+<script src="../js/jquery-3.7.1.min.js"></script>
+<script src="../js/script.js"></script>
 
 </html>

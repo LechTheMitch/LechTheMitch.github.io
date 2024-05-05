@@ -44,7 +44,7 @@
                     <!--دي هتتقلب onclick بالسكريبت-->
                     <ul>
                         <li class="sign-up"><a href="#signup">Sign Up</a></li>
-                        <li class="cart"><a href="#cart">Placeholder</a></li>
+                        <li class="cart"><a href="../about.html">About Us</a></li>
                         <li class="wish"><a href="#" onclick="$('html, body').animate({ 
                             scrollTop: $('html, body').get(0).scrollHeight 
                         }, 1000);">Contact Us <i class="people"></i></a>
@@ -69,7 +69,7 @@
             </div>
             <label class="quantity">quantity </label>
             <input type="number" class="quantity" name="quantity" min="1" max="100">
-            <a href="#" class="button">Buy Now</a>
+            <a href="#" class="button" onclick="temp()">Buy Now</a>
         </div>
 
     </section>
@@ -106,5 +106,10 @@
 
 
 </body>
+<script>
+    function temp() {
+        document.querySelector('.button').innerHTML = 'Added to cart';
+    }
+</script>
 
 </html>
