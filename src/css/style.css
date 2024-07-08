@@ -229,11 +229,16 @@ h6 {
 .text-bottom{
     margin-bottom: 48px;
 }
+.small-text{
+    font-size: 12px;
+}
 .prevent-selection{
     user-select: none;
     text-align: center;
 
 }
+
+/*** Header CSS Start ***/
 header {
     display: flex;
     justify-content: space-between;
@@ -275,9 +280,17 @@ header nav ul li:last-child {
 .header-m{
     margin-bottom: 4px;
 }
-.about-history{
-    background: url('../images/microscope-man.jpg') 100% 20% no-repeat ;
+div.responsive-menu {
+    display: none;
 }
+.about-history-bg{
+    background: url('../images/about-history-bg.jpg') 100% 20% no-repeat ;
+}
+.news-bg{
+    background: url('../images/news-bg.jpg') 100% 20% no-repeat ;
+}
+
+/*** Hero Images CSS Start ***/
 .hero{
     text-align: center;
     background-size: cover;
@@ -298,7 +311,7 @@ header nav ul li:last-child {
   }
 
 
-  /*** Footer ***/
+/*** Footer CSS Start ***/
 section.footer{
     background-color: var(--white100);
 }  
@@ -352,4 +365,157 @@ footer .footer-r p i{
     color: var(--secondary13);
     margin-right: 8px;
     font-size: 16px;
+}
+
+/*** News Card CSS Start ***/
+.news-card {
+    background-color: var(--white100);
+    display: flex;
+    border-radius: 30px;
+    max-height: 400px;
+}
+.news-card img {
+    width: 392px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 30px 0 0 30px;
+    margin-right: 24px;
+}
+.news-card .news-text {
+    max-width: 700px;
+}
+.news-content h4 {
+    margin-bottom: 8px;
+}
+.news-content p {
+    margin-bottom: 2px;
+}
+.news-content p.primary13 {
+    margin-bottom: 8px;
+}
+.news-content div.blog-name {
+    text-align: end;
+}
+.news-content .date {
+    margin-top: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Responsive Style ***/
+@media screen and (max-width: 1280px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+
+    h5 {
+        font-size: 24px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+    .header-m, .header-r{
+        display: none;
+    }
+    header{
+        padding: 8px;
+    }
+    section.news{
+        padding: 8px;
+    }
+    .news-card{
+        max-height: 100%;
+    }
+    .news-text{
+        padding-right: 16px;
+    }
+    .news-content div.blog-name{
+        text-align: start;
+    }
+    .news-card img{
+        object-fit: cover;
+    }
+    footer{
+        padding: 8px;
+        flex-wrap: wrap;
+
+    }
+    footer .footer-r h6{
+        text-align: start;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    footer{
+        flex-direction: column;
+    }
+    .news-card {
+        flex-direction: column;
+    }
+    .news-content div.blog-name {
+        text-align: end;
+        margin-right: 16px;
+    }
+    .news-content{
+        padding: 16px;
+    }
+    .news-card img {
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        margin-right: 0;
+        border-radius: 30px 30px 0 0;
+    } 
+    .news-content .date {
+        margin-top: 0;
+    }
 }
