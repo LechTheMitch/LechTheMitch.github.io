@@ -283,14 +283,14 @@ header nav ul li:last-child {
 div.responsive-menu {
     display: none;
 }
-.about-history-bg{
-    background: url('../images/about-history-bg.jpg') 100% 20% no-repeat ;
-}
-.news-bg{
-    background: url('../images/news-bg.jpg') 100% 20% no-repeat ;
-}
 
 /*** Hero Images CSS Start ***/
+.about-history-bg{
+    background: url('../images/about-history-bg.jpg') 100% 20% no-repeat ;
+  }
+  .news-bg{
+    background: url('../images/news-bg.jpg') 100% 20% no-repeat ;
+   }
 .hero{
     text-align: center;
     background-size: cover;
@@ -309,7 +309,7 @@ div.responsive-menu {
     opacity:1;
     backdrop-filter: blur(10px);
   }
-
+  
 
 /*** Footer CSS Start ***/
 section.footer{
@@ -495,6 +495,12 @@ footer .footer-r p i{
     footer .footer-r h6{
         text-align: start;
     }
+    .hero{
+        padding: 150px;
+    }
+    .text{
+        padding: 16px;
+    }
 
 }
 @media screen and (max-width: 768px) {
@@ -510,6 +516,9 @@ footer .footer-r p i{
     }
     .news-content{
         padding: 16px;
+    }
+    .news{
+        width: 90%;
     }
     .news-card img {
         width: auto;
