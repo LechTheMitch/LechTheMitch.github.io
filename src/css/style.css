@@ -469,6 +469,9 @@ footer .footer-r p i{
     header{
         padding: 8px;
     }
+    div.responsive-menu {
+        display: block;
+    }
     section.news{
         padding: 8px;
     }
@@ -517,5 +520,11 @@ footer .footer-r p i{
     } 
     .news-content .date {
         margin-top: 0;
+    }
+    .footer-text{
+        max-width: 100%;
+    }
+    .socials{
+        margin-bottom: 24px;
     }
 }
