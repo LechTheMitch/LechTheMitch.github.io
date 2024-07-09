@@ -490,7 +490,6 @@ footer .footer-r p i{
     footer{
         padding: 8px;
         flex-wrap: wrap;
-
     }
     footer .footer-r h6{
         text-align: start;
@@ -501,6 +500,49 @@ footer .footer-r p i{
     .text{
         padding: 16px;
     }
+    .footer-text{
+        max-width: 100%;
+    }
+    ul.sidebar {
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        right: -250px;
+        background-color: white;
+        box-shadow:  -5px 0 5px rgba(0, 0, 0, 0.15);
+        padding: 16px;
+        width: 240px;
+        height: 100vh;
+    }
+    ul.sidebar li {
+        line-height: 32px;
+    }
+    ul.sidebar li a{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+        border-style: solid;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-color: var(--primary10)
+    }
+    ul.sidebar a.closemenu{
+        display: block;
+        background-color: var(--primary10);
+        padding: 12px 8px;
+        border-radius: 8px;
+        margin-top: 64px;
+        text-align: center;
+    }
+    ul.sidebar li.close {
+        padding: 16px 0;
+    }
+    ul.sidebar li a img {
+        width: 24px;
+    }
+    
 
 }
 @media screen and (max-width: 768px) {
@@ -529,9 +571,6 @@ footer .footer-r p i{
     } 
     .news-content .date {
         margin-top: 0;
-    }
-    .footer-text{
-        max-width: 100%;
     }
     .socials{
         margin-bottom: 24px;

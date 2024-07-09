@@ -1,6 +1,4 @@
-importScripts ('../lib/jquery-3.7.1.min.js');
-
- //Responsive Menu
+//Responsive Menu
  $(".openmenu").click(function(){
     $(".sidebar").animate({
         right: "0px",
