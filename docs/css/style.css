@@ -525,29 +525,24 @@ footer .footer-r p i{
         right: -250px;
         background-color: white;
         box-shadow:  -5px 0 5px rgba(0, 0, 0, 0.15);
-        
         width: 240px;
         height: 100vh;
     }
     ul.sidebar li {
         line-height: 32px;
-        border-style: solid;
-        border-left: none;
-        border-right: none;
-        border-top: none;
-        border-color: var(--primary10);
     }
     ul.sidebar li a{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 16px 0;  
+        padding: 32px 0;  
         margin-left: 8px;
         transition: 0.3s;
+        font-weight: 600;
     }
     ul.sidebar li:hover{
         background-color: var(--gray60);
-        color: var(--primary10);
+        color: var(--primary14);
         transition: 0.3s;
     }
     ul.sidebar a.closemenu{
@@ -555,8 +550,12 @@ footer .footer-r p i{
         background-color: var(--primary10);
         padding: 12px 8px;
         border-radius: 10px;
-        margin: auto;
-        margin-top: 64px;
+        position: absolute;
+        bottom: 128px;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
         text-align: center;
         transition: 0.3s;
         width: 80%;
