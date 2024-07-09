@@ -40,11 +40,28 @@ body{
 .navlink:hover{
      background-color: blue;
 }
+.navlink:hover .icon{
+    animation: rotate 0.5s;
+}
+.navlink:hover .link{
+    transform: translateX(15px);
+}
 .navlink .icon{
     margin-right: 14px;
     font-size: 20px;
     transition: 0.3s;
     color: black;
+}
+@keyframes rotate {
+    0%,80%{
+        transform: rotate(10deg);
+    }
+    20%,60%,100%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(-10deg);
+    }
 }
 .navlink:hover .icon,
 .navlink:hover .link{
@@ -72,6 +89,7 @@ body{
 .list button:hover{
     background-color: white;
     color: black;
+    transform: scale(0.93);
 }
 .main_doctors h5{
     font-size: 40px;
@@ -107,7 +125,9 @@ body{
 }
 .doctor:hover{
     /* box-shadow: 5px 5px 20px 0px #797979; */
-    box-shadow: 20px 20px 32px 0 rgba(0, 0, 0, 0.24);}
+    box-shadow: 20px 20px 32px 0 rgba(0, 0, 0, 0.24);
+    transform: scale(1.05);
+}
 .doctor img{
     width: 100px;
     position: absolute;
