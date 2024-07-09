@@ -181,8 +181,8 @@ body{
         font-size: 35px;
         position: absolute;
         z-index: 100;
-        left: 40px;
-        top: 40px;
+        left: 20px;
+        top: 20px;
         cursor: pointer;
         display: block;
     }
