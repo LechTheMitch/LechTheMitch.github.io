@@ -23,7 +23,7 @@ body{
 .lists{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
 }
 .list{
     list-style: none;
@@ -36,6 +36,8 @@ body{
     padding: 15px;
     border-radius: 8px;
     color: black;
+    position: relative;
+    top: 25px;
 }
 .navlink:hover{
      background-color: blue;
@@ -82,7 +84,7 @@ body{
     font-size: 17px;
     font-weight: 600;
     position: relative;
-    top: 100px;
+    top: 85px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -159,4 +161,46 @@ body{
 .doctor button:hover{
     background-color: blue;
     color: white;
+}
+@media (max-width:1516px){
+    .main_doctors{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .fifth{
+        margin-top: 80px;
+    }
+    .sidebar{
+        display:none
+    }
+    .menu{
+        font-size: 35px;
+        position: absolute;
+        z-index: 100;
+        left: 40px;
+        top: 40px;
+        cursor: pointer;
+        display: block;
+    }
+}
+@media (max-width:1507px){
+    .fifth{
+        margin-top: 0;
+    }
+}
+@media (max-width:1216px){
+    .fourth{
+        margin-top: 0;
+    }
+}
+@media (max-width:910px){
+    .third{
+        margin-top:0;
+    }
+}
+@media (max-width:619.5px){
+    .second{
+        margin-top:0;
+    }
 }
