@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", Helvetica, sans-serif;
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 304px;
+    padding: 30px;
+    background-color: rgb(203, 222, 248);
+    box-shadow: 3px 0px 20px 0 rgba(0, 0, 0, 0.24);
+    z-index: 2;
+}
+.sidebar .sidebar_content{
+    padding: 5px;
+}
+.lists{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.list{
+    list-style: none;
+}
+.navlink{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 15px;
+    border-radius: 8px;
+    color: black;
+}
+.navlink:hover{
+     background-color: blue;
+}
+.navlink .icon{
+    margin-right: 14px;
+    font-size: 20px;
+    transition: 0.3s;
+    color: black;
+}
+.navlink:hover .icon,
+.navlink:hover .link{
+    color: white;
+}
+.navlink .link{
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.list button{
+    width: 200px;
+    height: 50px;
+    border: blue solid;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+    top: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.list button:hover{
+    background-color: white;
+    color: black;
+}
+.main_doctors h5{
+    font-size: 40px;
+    padding-left: 20px;
+    position: absolute;
+
+}
+.main_doctors{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    background-color: #e7e9ff;
+    width: 80%;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+}
+.upper{
+    margin-top: 80px;
+}
+.doctor{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 250px;
+    height: 280px;
+    border-radius: 30px;
+    transition: 0.3s;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    padding: 15px;
+}
+.doctor:hover{
+    /* box-shadow: 5px 5px 20px 0px #797979; */
+    box-shadow: 20px 20px 32px 0 rgba(0, 0, 0, 0.24);}
+.doctor img{
+    width: 100px;
+    position: absolute;
+    left: 75px;
+    top: 25px;
+}
+.doctor h6{
+    position: absolute;
+    top: 150px;
+    font-size: 18px;
+}
+.doctor p{
+    position: absolute;
+    top: 195px;
+    color: #797979;
+    font-size: 15px;
+}
+.doctor button{
+    width: 65%;
+    height: 30px;
+    position: absolute;
+    top:235px ;
+    background-color: #eaece9;
+    border-radius: 30px;
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.doctor button:hover{
+    background-color: blue;
+    color: white;
+}
