@@ -233,6 +233,10 @@ body{
     .third{
         margin-top:0;
     }
+    label i{
+        position: absolute;
+        right: 2px;
+    }
 }
 @media (max-width:619.5px){
     .second{
