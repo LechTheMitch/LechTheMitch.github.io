@@ -8,8 +8,16 @@
     <title>Gega hospital</title>
 </head>
 <body>
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+    <label for="sidebar-active" class="close-sidebar">
+        <i class="fa-solid fa-x"></i>
+    </label>
     <div class="sidebar">
         <div class="sidebar_content">
+            <img src="imgs/Logo.svg">
             <ul class="lists">
                 <li class="list">
                     <a href="#" class="navlink">
@@ -18,7 +26,7 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="services.html" class="navlink">
+                    <a href="#" class="navlink">
                         <i class="fa-solid fa-notes-medical icon"></i>
                         <span class="link">Services</span>
                     </a>
@@ -53,81 +61,63 @@
             </ul>
         </div>
     </div>
-    <div class="title"> <h6><span style="color:skyblue;">Our</span> services</h6></div>
-    <div class="main-services">
-        <div class="service">
+    <div class="main_doctors">
+        <h5>Our services</h5>
+        <div class="doctor upper first">
             <img src="imgs/image_processing20210717-22090-2s6qr2.png">
-            <h4>Cardiologist</h4>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Natus velit necessitatibus
-                 autem voluptate animi doloremque recusandae
-                  vero dignissimos quod repellendus!</p>
-                  <button ><a href="Doctors.html">more details</a>  <div><i class="fa-solid fa-arrow-right"></i></div></button>        </div>
-        <div class="service">
-            <img src="imgs/image_processing20211006-18089-1b59nad.png" class="job">
-            <h4>Optometrists</h4>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Natus velit necessitatibus
-                 autem voluptate animi doloremque recusandae
-                  vero dignissimos quod repellendus!</p>
-                  <button><a href="Doctors.html">more details</a>  <div><i class="fa-solid fa-arrow-right"></i></div></button>
+            <h6>Cardiologist</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat doloremque repellendus culpa eligendi!</p>
+            <button><a href="../doctors/Doctors.html">more details</a></button>
         </div>
-        <div class="service">
-            <img src="imgs/Obstetrics & Gynecology.png">
-            <h4>Obstetrics & Gynecology</h4>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Natus velit necessitatibus
-                 autem voluptate animi doloremque recusandae
-                  vero dignissimos quod repellendus!</p>
-                  <button><a href="Doctors.html">more details</a>  <div><i class="fa-solid fa-arrow-right"></i></div></button>        </div>
-        <div class="service">
-            <img src="imgs/Urologist.png">
-            <h4>Urologist</h4>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Natus velit necessitatibus
-                 autem voluptate animi doloremque recusandae
-                  vero dignissimos quod repellendus!</p>
-                  <button><a href="Doctors.html">more details</a>  <div><i class="fa-solid fa-arrow-right"></i></div></button>        </div>
-        <div class="service">
+        <div class="doctor upper second">
+            <img src="imgs/image_processing20211006-18089-1b59nad.png">
+            <h6>Optometrists</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat doloremque repellendus culpa eligendi!</p>
+            <button><a href="../doctors/Doctors.html">More details</a></button>
+        </div>
+        <div class="doctor upper third">
+            <img src="imgs/Obstetrics & Gynecology.png" style="width: 55%; top: 0px;">
+            <h6>Obstetrics & Gynecology</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat doloremque repellendus culpa eligendi!</p>
+            <button><a href="../doctors/Doctors.html">More details</a></button>
+        </div>
+        <div class="doctor">
             <img src="imgs/Dermatology.png">
-            <h4>Dermatology</h4>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Natus velit necessitatibus
-                 autem voluptate animi doloremque recusandae
-                  vero dignissimos quod repellendus!</p>
-                  <button><a href="Doctors.html">more details</a>  <div><i class="fa-solid fa-arrow-right"></i></div></button>        </div>
-        <div class="service">
-            <img src="imgs/Otolaryngologist.png">
-            <h4>Otolaryngologist</h4>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Natus velit necessitatibus
-                 autem voluptate animi doloremque recusandae
-                  veroo dignissimos quod repellendus!</p>
-                  <button><a href="Doctors.html">more details</a>  <div><i class="fa-solid fa-arrow-right"></i></div></button>       </div>
-        <div class="service">
-           <img src="imgs/Orthopedist.png">
-            <h4>Orthopedist</h4>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Natus velit necessitatibus
-                 autem voluptate animi doloremque recusandae
-                  vero dignissimos quod repellendus!</p>
-                  <button><a href="Doctors.html">more details</a>  <div><i class="fa-solid fa-arrow-right"></i></div></button>        </div>
-        <div class="service">
+            <h6>Dermatology</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat doloremque repellendus culpa eligendi!</p>
+            <button><a href="../doctors/Doctors.html">More details</a></button>
+        </div>
+        <div class="doctor ">
+            <img src="imgs/internist.png" style="width: 50%;">
+            <h6>internist</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat doloremque repellendus culpa eligendi!</p>
+            <button><a href="../doctors/Doctors.html">More details</a></button>
+        </div>
+        <div class="doctor">
             <img src="imgs/Neurologist.png">
-            <h4>Neurologist</h4>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Natus velit necessitatibus
-                 autem voluptate animi doloremque recusandae
-                  vero dignissimos quod repellendus!</p>
-                  <button><a href="Doctors.html">more details</a>  <div><i class="fa-solid fa-arrow-right"></i></div></button>      </div>
-        <div class="service">
-            <img src="imgs/internist.png">
-            <h4>internist</h4>
-            <p>Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Natus velit necessitatibus
-                 autem voluptate animi doloremque recusandae
-                  vero dignissimos quod repellendus!</p>
-                  <button><a href="Doctors.html">more details</a>  <div><i class="fa-solid fa-arrow-right"></i></div></button>        </div>
+            <h6>Neurologist</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat doloremque repellendus culpa eligendi!</p>
+            <button><a href="../doctors/Doctors.html">More details</a></button>
+        </div>
+        <div class="doctor">
+            <img src="imgs/Orthopedist.png">
+            <h6>Orthopedist</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat doloremque repellendus culpa eligendi!</p>
+            <button><a href="../doctors/Doctors.html">More details</a></button>
+        </div>
+        <div class="doctor">
+            <img src="imgs/Otolaryngologist.png">
+            <h6>Otolaryngologist</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat doloremque repellendus culpa eligendi!</p>
+            <button><a href="../doctors/Doctors.html">More details</a></button>
+        </div>
+        <div class="doctor">
+            <img src="imgs/Urologist.png">
+            <h6>Urologist</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum placeat doloremque repellendus culpa eligendi!</p>
+            <button><a href="../doctors/Doctors.html">More details</a></button>
+        </div>
+
     </div>
 </body>
 </html>
