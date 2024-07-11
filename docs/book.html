@@ -55,12 +55,38 @@
     
 
     <!-- Booking Section Start-->
-     <section class="booking-container maxwidth">
-        <div class="booking-form">
+     <section class="booking-container">
+        <div class="booking-form maxwidth">
             <h5 class="primary10 light">Book Now</h5>
+            <form action="">
+                <div>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email">
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div>
+                    <label for="date">Date:</label><br>
+                    <input type="date" id="date" name="date">
+                    <label for="time">Time:</label><br>
+                    <input type="time" id="time" name="time">
+                    <label for="doctor">Doctor:</label><br>
+                    <select name="doctor" id="doctor">
+                        <option value="" disabled selected>Select</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+            </form>
         </div>
         <div class="booking-information">
-
+            <h5 class="white100 light">Support Information</h5>
         </div>
                 
      </section>

@@ -27,6 +27,7 @@
     --gray40: #EDEDED;
     --gray20: #F6F6F6;
     --white100: #e7ecf1;
+    --white90: #faf1eb;
     --logo: #0D4C90;
 
 }
@@ -476,23 +477,46 @@ section.booking-container{
 }
 div.booking-form{
     box-sizing: border-box;
-    width: 75%;
-    padding: 32px;
+    width: 60%;
+    padding: 32px 64px;
+}
+div.booking-form form{
+    display: flex;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    justify-content: space-between;
+    gap: 32px;
 }
 div.booking-information{
-    width: 25%;
+    width: 40%;
     height: 100%;
-    padding: 32px;
+    padding: 32px 40px;
     box-sizing: border-box;
     background-color: var(--primary11);
 }
-
-
-
-
-
-
-
+input, select{
+    background-color: var(--gray20);
+    border: solid 1px var(--gray60);
+    color: var(--gray100);
+    padding: 8px 12px;
+    max-height: 40px;
+    min-height: 38px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+label{
+    color: var(--black100);
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+input, select:focus{
+    outline-color: var(--secondary11);
+}
+option{
+    cursor: pointer;
+}
 
 
 
@@ -595,7 +619,7 @@ div.booking-information{
         box-shadow:  -5px 0 5px rgba(0, 0, 0, 0.15);
         width: 240px;
         height: 100vh;
-    }white
+    }
     ul.sidebar li {
         line-height: 32px;
     }
@@ -635,6 +659,50 @@ div.booking-information{
         transition: 0.3s;
         border-radius: 8px;
     }
+    div.book-hero{
+        height: 300px;
+    }
+    section.booking-container{
+        background-color: var(--gray40);
+        box-shadow: 0 0 0px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 0px;
+        display: flex;;
+    }
+    div.booking-information{
+        background-color: var(--secondary10);
+        min-height: 400px;
+    }
+    div.booking-form{
+        box-sizing: border-box;
+        background-color: var(--white100);
+        padding: 32px 64px;
+        min-height: 400px;
+    }
+    div.booking-form form{
+        display: flex;
+        margin-bottom: 16px;
+        margin-top: 16px;
+        justify-content: space-between;
+        gap: 32px;
+    }
+    input, select{
+        background-color: var(--gray20);
+        border: solid 1px var(--gray60);
+        color: var(--gray100);
+        padding: 8px 12px;
+        max-height: 40px;
+        min-height: 38px;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .book-rest{
+        display: none;
+    }
     
 
 }
@@ -668,4 +736,19 @@ div.booking-information{
     .socials{
         margin-bottom: 24px;
     }
+    div.booking-form{
+        box-sizing: border-box;
+        width: 100%;
+        background-color: var(--white100);
+        padding: 32px 64px;
+    }
+    div.booking-information{
+        width: 100%;
+    }
+    section.booking-container{
+        position: relative;
+        z-index: 0;
+        flex-wrap: wrap;
+    }
+
 }
