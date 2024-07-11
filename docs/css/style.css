@@ -613,9 +613,10 @@ option{
     ul.sidebar {
         position: fixed;
         top: 0;
+        padding: 16px;
         z-index: 2;
         right: -250px;
-        background-color: white;
+        background-color: var(--white100);
         box-shadow:  -5px 0 5px rgba(0, 0, 0, 0.15);
         width: 240px;
         height: 100vh;
@@ -623,19 +624,27 @@ option{
     ul.sidebar li {
         line-height: 32px;
     }
+    ul.sidebar li i{
+        font-size: 20px;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
     ul.sidebar li a{
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 32px 0;  
-        margin-left: 8px;
+        padding: 8px 0;  
         transition: 0.3s;
         font-weight: 600;
+        margin-bottom: 8px;
+    }
+    ul.sidebar a:hover{
+        color: var(--secondary10);
+        transform: translateX(8px);
     }
     ul.sidebar li:hover{
-        background-color: var(--gray60);
-        color: var(--primary14);
+        background-color: var(--primary10);
+        border-radius: 8px;
         transition: 0.3s;
+        color: var(--secondary10);
     }
     ul.sidebar a.closemenu{
         display: block;
@@ -651,12 +660,13 @@ option{
         text-align: center;
         transition: 0.3s;
         width: 80%;
-
     }
     ul.sidebar a.closemenu:hover{
         background-color: var(--primary12);
         color: var(--secondary14);
         transition: 0.3s;
+        transform: translate(0px);
+        transform: scale(1.1);
         border-radius: 8px;
     }
     div.book-hero{
