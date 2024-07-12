@@ -518,33 +518,6 @@ option{
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*** Responsive Style ***/
 @media screen and (max-width: 1280px) {
     h1 {
@@ -637,16 +610,16 @@ option{
         margin-bottom: 8px;
     }
     ul.sidebar a:hover{
-        color: var(--secondary10);
+        color: var(--secondary14);
         transform: translateX(8px);
     }
     ul.sidebar li:hover{
         background-color: var(--primary10);
         border-radius: 8px;
         transition: 0.3s;
-        color: var(--secondary10);
+        color: var(--secondary16);
     }
-    ul.sidebar a.closemenu{
+    ul.sidebar a.app-side{
         display: block;
         background-color: var(--primary10);
         padding: 12px 8px;
@@ -661,13 +634,27 @@ option{
         transition: 0.3s;
         width: 80%;
     }
-    ul.sidebar a.closemenu:hover{
+    ul.sidebar a.app-side:hover{
         background-color: var(--primary12);
         color: var(--secondary14);
         transition: 0.3s;
         transform: translate(0px);
         transform: scale(1.1);
         border-radius: 8px;
+    } 
+    ul.sidebar div.close{
+        display: block;
+        border-radius: 10px;
+        font-size: 32px;
+        transition: 0.3s;
+        position: relative;
+        text-align: end;
+    }
+    ul.sidebar a.closemenu:hover{
+        color: var(--secondary14);
+        transition: 0.3s;
+        border-radius: 8px;
+        transform: translateX(0px)
     }
     div.book-hero{
         height: 300px;
