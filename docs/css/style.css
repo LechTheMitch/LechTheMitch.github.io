@@ -494,6 +494,16 @@ div.booking-information{
     box-sizing: border-box;
     background-color: var(--primary11);
 }
+div.booking-information h5{
+    margin-bottom: 40px;
+}
+div.booking-information p{
+    margin-bottom: 32px;
+    font-size: 18px;
+}
+div.booking-information i{
+    margin-right: 8px;
+}
 input, select{
     background-color: var(--gray20);
     border: solid 1px var(--gray60);
