@@ -428,6 +428,7 @@ footer .footer-r p i{
 }
 .news-card .news-text {
     max-width: 700px;
+    min-height: 252px;
 }
 .news-content h4 {
     margin-bottom: 8px;
