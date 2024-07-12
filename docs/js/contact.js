@@ -34,7 +34,12 @@ icon3.onclick=function(){
     info3.style.display='none';
 }
 
-
+let sec2 = document.getElementsByClassName("SEC2");
+let list = document.getElementById("list");
+list.onclick=function(){
+    sec2.classlist.remove("hide");
+    list.classlist.add("hide");
+}
 
 // let info=document.getElementsByClassName("plus-info-1")
 // let icon=document.getElementsByClassName("plus-icon-1")

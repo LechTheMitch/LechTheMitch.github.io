@@ -9,3 +9,8 @@
         right: "-250px",
     })
  })
+ $(".closemenu-diaa").click(function(){
+    $(".sidebar").animate({
+        right: "-300px",
+    })
+ })

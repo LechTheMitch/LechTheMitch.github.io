@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 *{
     padding: 0;
     margin: 0;
@@ -159,4 +161,434 @@ input{
     background-image: url('hospital/WhatsApp Image 2024-07-08 at 20.17.56_d04f5562.jpg') no-repeat;
     background-size: cover;
 
+}
+iframe{
+    width: 100%;
+    height: 450px;
+}
+
+
+
+/*** Colors ***/
+:root{
+    --primary10: #0e4572;
+    --primary11: #0d3e67;
+    --primary12: #0a3050;
+    --primary13: #082944;
+    --primary14: #265880;
+    --primary15: #567d9c;
+    --primary16: #6e8faa;
+    --secondary10: #cd7632;
+    --secondary11: #b96a2d;
+    --secondary12: #905323;
+    --secondary13: #7b471e;
+    --secondary14: #d28447;
+    --secondary15: #dc9f70;
+    --secondary16: #e1ad84;
+    --tertiary10: #57ace6;
+    --black100: #01070b;
+    --black75: #383838;
+    --gray100: #A3A3A3;
+    --gray80: #DADADA;
+    --gray60: #E3E3E3;
+    --gray40: #EDEDED;
+    --gray20: #F6F6F6;
+    --white100: #e7ecf1;
+    --white90: #faf1eb;
+    --logo: #0D4C90;
+
+}
+h1 {
+    font-size: 60px;
+    line-height: 72px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-size: 40px;
+    line-height: 56px;
+    margin-bottom: 16px;
+}
+
+h4 {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 16px;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.primary10 {
+    color: var(--primary10);
+}
+
+.primary11 {
+    color: var(--primary11);
+}
+
+.primary12 {
+    color: var(--primary12);
+}
+
+.primary13 {
+    color: var(--primary13);
+}
+
+.primary14 {
+    color: var(--primary14);
+}
+
+.primary15 {
+    color: var(--primary15);
+}
+
+.primary16 {
+    color: var(--primary16);
+}
+
+.secondary10 {
+    color: var(--secondary10);
+}
+
+.secondary11 {
+    color: var(--secondary11);
+}
+
+.secondary12 {
+    color: var(--secondary12);
+}
+
+.secondary13 {
+    color: var(--secondary13);
+}
+
+.secondary14 {
+    color: var(--secondary14);
+}
+
+.secondary15 {
+    color: var(--secondary15);
+}
+
+.secondary16 {
+    color: var(--secondary16);
+}
+
+.tertiary10 {
+    color: var(--tertiary10);
+}
+
+.black100 {
+    color: var(--black100);
+}
+
+.black75 {
+    color: var(--black75);
+}
+
+.gray100 {
+    color: var(--gray100);
+}
+
+.gray80 {
+    color: var(--gray80);
+}
+
+.gray60 {
+    color: var(--gray60);
+}
+
+.gray40 {
+    color: var(--gray40);
+}
+
+.gray20 {
+    color: var(--gray20);
+}
+
+.white100 {
+    color: var(--white100);
+}
+
+/*** Header CSS Start ***/
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+header a{
+    text-decoration: none;
+    color: var(--black100);
+}
+section.topbar {
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+header .logo img {
+    height: 26px;
+    margin-top: 10px;
+}
+header .logo a{
+    display: inline-flex;
+    gap: 4px;
+    color: var(--logo);
+    margin-top: 8px;
+}
+header nav ul {
+    display: flex;
+    margin-top: 8px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+header nav ul li {
+    margin-right: 72px;
+    display: inline-block;
+}
+header nav ul li:last-child {
+    margin-right: 0;
+}
+header nav ul li a {
+    transition: 0.3s;
+}
+header nav ul li a:hover {
+    color: var(--secondary11);
+    transition: 0.3s;
+}
+header  .head-book nav ul li a:hover {
+    color: var(--secondary15);
+    transition: 0.3s;
+}
+.header-r a {
+    background-color: var(--primary10);
+    padding: 12px 8px;
+    border-radius: 10px;
+    transition: 0.3s;
+    border-width: thin;
+    border-style: solid;
+}
+.header-r a:hover {
+    background-color: var(--primary12);
+    transition: 0.3s;
+    color:var(--secondary14);
+    border-radius: 8px;
+}
+.header-r a.appoint-book{
+    background-color: var(--white100);
+    transition: 0.3s;
+}
+.header-r a.appoint-book:hover{
+    color: var(--white100);
+    border-style: solid;
+    background-color: var(--tertiary10);
+    transition: 0.3s;
+    border-width: thin;
+}
+.header-m{
+    margin-bottom: 4px;
+}
+div.responsive-menu {
+    display: none;
+}
+@media  (min-width:375px) and (max-width:1000px){
+    h2 ,h3{
+           font-size: 1.1em;
+       }
+       
+    p{
+        font-size: .7em;
+        
+    }
+    
+    .sec1-1{
+        padding: 1.7em;
+        padding-left: 1.5em;
+       overflow: hidden;
+        width: 100%;
+    }
+    .sec1-1 h1{
+ 
+        font-size: 2em;
+        margin-bottom: 5em;
+    }
+    .sec1-1 pre{
+      
+        font-size: 1em;
+        font-weight: 300;
+        overflow: hidden;
+    }
+    .sec1-1 button{
+        margin-top: 5em;
+    }
+    .SEC2{
+        width: 20%;
+        padding: .6em;
+    
+    }
+    .SEC2 h3{
+        font-size: 1em;
+        color: #9acff0;
+    }
+    .sec1-2 b{
+        font-size: .6em;
+    }
+    .sec1-2 p {
+      margin: .7em 0 0 2em;
+      
+    }
+    .sec1-2 i{
+        font-size: .8em;
+        margin-top: 1em;
+        margin-right: .1em;
+      
+    }
+    
+    .sec1-3 i{
+        font-size: .8em;
+        margin-right: .7em;
+        margin-top: 6.3em;
+    }
+    .sec3{
+        text-align: center;
+        flex-direction: column;
+        padding: 6em 3em;
+       
+    }
+    .sec3-1{
+        width: 90%;
+        margin-right: 6.5em;
+        margin-bottom: 4em;
+    }
+    .sec3-1 h2{
+        margin-bottom: 1.25em;
+        
+    }
+    .sec3-1 button{
+        width: 10em;
+        height: 2em;
+    }
+    .sec3 input{
+        width: 60%;
+        height: 7%;
+        margin-bottom: 1.4em;
+    }
+    #input-3{
+        height: 3.8em;
+    }
+    .sec3-2{
+       
+        width: 90%;
+        padding: 4em 1.25em 1.7em 1.25em;
+    }
+    .plus-info{
+      font-size: .8em;
+        margin-bottom: 1.25em;
+     
+       overflow: hidden;
+       
+    }
+    .hide{
+        display: none;
+    }
+    
+    /*** Header Responsive ***/
+    .header-m, .header-r{
+        display: none;
+    }
+    header{
+        padding: 8px;
+    }
+    div.responsive-menu {
+        display: block;
+    }
+    ul.sidebar {
+        position: fixed;
+        top: 0;
+        padding: 16px;
+        z-index: 6;
+        right: -300px;
+        background-color: var(--white100);
+        box-shadow:  -5px 0 5px rgba(0, 0, 0, 0.15);
+        width: 240px;
+        height: 100vh;
+    }
+    ul.sidebar li {
+        line-height: 32px;
+    }
+    ul.sidebar li i{
+        font-size: 20px;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+    ul.sidebar li a{
+        display: flex;
+        padding: 8px 0;  
+        transition: 0.3s;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+    ul.sidebar a:hover{
+        color: var(--secondary14);
+        transform: translateX(8px);
+    }
+    ul.sidebar li:hover{
+        background-color: var(--primary10);
+        border-radius: 8px;
+        transition: 0.3s;
+        color: var(--secondary16);
+    }
+    ul.sidebar a.app-side{
+        display: block;
+        background-color: var(--primary10);
+        padding: 12px 8px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 128px;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+        transition: 0.3s;
+        width: 80%;
+    }
+    ul.sidebar a.app-side:hover{
+        background-color: var(--primary12);
+        color: var(--secondary14);
+        transition: 0.3s;
+        transform: translate(0px);
+        transform: scale(1.1);
+        border-radius: 8px;
+    } 
+    ul.sidebar div.close{
+        display: block;
+        border-radius: 10px;
+        font-size: 32px;
+        transition: 0.3s;
+        position: relative;
+        text-align: end;
+    }
+    ul.sidebar a.closemenu:hover{
+        color: var(--secondary14);
+        transition: 0.3s;
+        border-radius: 8px;
+        transform: translateX(0px)
+    }
+    header li{
+        list-style: none;
+    }
 }
