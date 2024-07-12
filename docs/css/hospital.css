@@ -546,7 +546,7 @@ height: 50px;
     color: #9acff0;
 }
 
- @media (min-width:370px) and (max-width:500px){
+ @media (min-width:0px) and (max-width:500px){
     h1{
        font-size: 1.2em;
     }
