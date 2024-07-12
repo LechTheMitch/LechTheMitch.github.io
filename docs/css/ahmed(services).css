@@ -181,7 +181,7 @@ body{
     transform: scale(0.93);
 }
 .main_doctors h5{
-    font-size: 50px;
+    font-size: 35px;
     padding-left: 20px;
     position: absolute;
 
@@ -225,21 +225,22 @@ body{
 }
 .doctor h6{
     position: absolute;
-    top: 170px;
-    font-size: 25px;
+    top: 175px;
+    font-size: 20px;
 }
 .doctor p{
     position: absolute;
     top: 220px;
     color: #797979;
-    font-size: 15px;
-    padding-left: 20px;
+    font-size: 13px;
+    padding-left: 30px;
 }
 .doctor button{
     width: 65%;
     height: 35px;
     position: absolute;
     top: 300px;
+    right: 55px;
     background-color: #eaece9;
     border-radius: 30px;
     border: none;
