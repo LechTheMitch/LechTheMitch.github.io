@@ -545,3 +545,120 @@ height: 50px;
 .copy span{
     color: #9acff0;
 }
+
+ @media (min-width:370px) and (max-width:500px){
+    h1{
+       font-size: 1.2em;
+    }
+    i{
+       font-size: 1em;
+    }
+    .sec1-image{
+       width: 90px;
+    }
+   p,pre,b,li ,a{
+       font-size: .6em;
+   }
+   h2{
+       font-size: 1em;
+   }
+   .sec1-img{
+       flex-direction: column;
+   }
+   .main-img{
+       width: 70%;
+   }
+   .main-img img{
+       width:80%;
+   }
+ .sec2-card-m{
+   width: 100%;
+  flex-direction: column;
+ }
+.sec2-icon{
+   margin: auto;
+}
+ .sec2-card{
+   width: 94%;
+ }
+ .sec3 {
+   position: relative;
+   width: 94%;
+   overflow: hidden;
+ }
+ .sec3 img{
+   position: absolute;
+   left: 10px;
+   top: -10px;
+   width: 30%;
+ }
+ .sec3-2{
+   overflow: hidden;
+ }
+#main img{
+   width: 30px;
+   height: 30px;
+ }
+ .sec3-2 pre{
+   overflow: hidden;
+   font-size: .7em;
+   margin-left: 10em;
+
+ }
+.sec4-card-m1{
+   flex-direction: column;
+}
+.sec4{
+   display: none;
+}
+.info h3{
+   font-size: .6em;
+}
+
+.sec6-card img ,.info{
+   height: 110px;
+}
+.sec7{
+   display: flex;
+}
+.sec7-card-m{
+   flex-direction: column;
+}
+.sec7-card{
+   width: 100px;
+   height: 100px;
+  
+}
+.sec7-img{
+   display: flex;
+   flex-direction: column;
+   
+}
+.sec7-img img{
+   width: 200px;
+}
+.sec7-title{
+   height: 400px;
+   width: 200px;
+}
+.sec7-title pre{
+text-wrap: wrap;
+ 
+}
+.sec5{
+   display: none;
+}
+.footer-m{
+   width: 100%;
+   
+}
+
+.footer-mm{
+   overflow: hidden;
+}
+.footer{
+
+   width: 200px;
+   height: 400px;
+}
+}
