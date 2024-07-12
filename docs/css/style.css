@@ -750,6 +750,9 @@ option{
         background-color: var(--white100);
         padding: 32px 64px;
     }
+    div.booking-form form{
+        flex-direction: column;
+    }
     div.booking-information{
         width: 100%;
     }

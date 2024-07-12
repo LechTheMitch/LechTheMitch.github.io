@@ -14,7 +14,7 @@ input{
 .sec1-1{
     padding: 30px;
     padding-left: 200px;
-    background:linear-gradient(25deg,rgb(2, 26, 62) 25% ,rgba(3, 33, 66, 0.586)47%),linear-gradient(180deg,rgba(1, 36, 78, 0) 96%,rgb(2, 29, 56)100%), url('hospital/WhatsApp Image 2024-07-08 at 23.50.37_befc82f9.jpg') no-repeat;
+    background:linear-gradient(25deg,rgb(2, 26, 62) 25% ,rgba(3, 33, 66, 0.586)47%),linear-gradient(180deg,rgba(1, 36, 78, 0) 96%,rgb(2, 29, 56)100%), url('../hospital/WhatsApp Image 2024-07-08 at 23.50.37_befc82f9.jpg') no-repeat;
 
    background-size: cover;
 
