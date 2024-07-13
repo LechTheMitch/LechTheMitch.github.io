@@ -566,6 +566,9 @@ option{
     div.responsive-menu {
         display: block;
     }
+    /*section.hero{
+        min-height: 500px !important;
+    }*/
     section.news{
         padding: 8px;
     }
