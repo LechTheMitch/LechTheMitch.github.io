@@ -620,6 +620,7 @@ height: 50px;
 }
 .sec7{
    display: flex;
+   overflow: hidden;
 }
 .sec7-card-m{
    flex-direction: column;

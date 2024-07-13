@@ -404,7 +404,7 @@ header  .head-book nav ul li a:hover {
 div.responsive-menu {
     display: none;
 }
-@media  (min-width:375px) and (max-width:1000px){
+@media  (min-width:0px) and (max-width:1000px){
     h2 ,h3{
            font-size: 1.1em;
        }
