@@ -445,6 +445,9 @@ footer .footer-r p i{
 .news-content .date {
     margin-top: 24px;
 }
+#readmore{
+    display: none;
+}
 
 /*** Booking CSS Start ***/
 body.booking{
@@ -740,6 +743,16 @@ option{
     } 
     .news-content .date {
         margin-top: 0;
+    }
+    .news-text{
+        min-height: auto !important;
+    }
+    #more-text{
+        display: none;
+    }
+    #readmore{
+        display: inline;
+        cursor: pointer;
     }
     .socials{
         margin-bottom: 24px;
