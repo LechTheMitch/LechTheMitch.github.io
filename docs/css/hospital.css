@@ -552,7 +552,26 @@ height: 50px;
 .copy span{
     color: #9acff0;
 }
+.text h1{
+    position: relative;
+}
+.text h1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgb(6, 72, 126) ;
+    border-left: 2px solid rgb(6, 72, 126);
+    animation: typing 2s  infinite;
 
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
  @media (min-width:0px) and (max-width:500px){
     h1{
        font-size: 1.2em;
