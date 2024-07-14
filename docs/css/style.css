@@ -761,6 +761,9 @@ option{
     .news{
         width: 90%;
     }
+    .news-card{
+        width: 100%;
+    }
     .news-card img {
         width: auto;
         height: auto;
