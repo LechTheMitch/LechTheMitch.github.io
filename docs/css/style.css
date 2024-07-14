@@ -762,7 +762,7 @@ option{
         width: 90%;
     }
     .news-card{
-        width: 100%;
+        width: 100% !important;
     }
     .news-card img {
         width: auto;
