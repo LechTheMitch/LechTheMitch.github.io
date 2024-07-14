@@ -445,6 +445,9 @@ footer .footer-r p i{
 .news-content .date {
     margin-top: 24px;
 }
+#readmore{
+    display: none;
+}
 
 /*** Booking CSS Start ***/
 body.booking{
@@ -563,11 +566,18 @@ option{
     div.responsive-menu {
         display: block;
     }
+    /*section.hero{
+        min-height: 500px !important;
+    }*/
     section.news{
         padding: 8px;
     }
     .news-card{
         max-height: 100%;
+        flex-direction: column;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .news-text{
         padding-right: 16px;
@@ -575,8 +585,28 @@ option{
     .news-content div.blog-name{
         text-align: start;
     }
-    .news-card img{
-        object-fit: cover;
+    .news-content{
+        padding: 16px;
+    }
+    .news-content .date {
+        margin-top: 0;
+    }
+    .news-card img {
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        margin-right: 0;
+        border-radius: 30px 30px 0 0;
+    } 
+    .news-text{
+        min-height: auto !important;
+    }
+    #more-text{
+        display: none;
+    }
+    #readmore{
+        display: inline;
+        cursor: pointer;
     }
     footer{
         padding: 8px;
@@ -731,6 +761,9 @@ option{
     .news{
         width: 90%;
     }
+    .news-card{
+        width: 100% !important;
+    }
     .news-card img {
         width: auto;
         height: auto;
@@ -740,6 +773,16 @@ option{
     } 
     .news-content .date {
         margin-top: 0;
+    }
+    .news-text{
+        min-height: auto !important;
+    }
+    #more-text{
+        display: none;
+    }
+    #readmore{
+        display: inline;
+        cursor: pointer;
     }
     .socials{
         margin-bottom: 24px;
