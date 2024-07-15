@@ -454,7 +454,7 @@ body.booking{
     background: var(--tertiary10);
 }
 div.book-hero{
-    height: 500px;
+    height: 8px;
     z-index: 0;
 }
 div.book-rest{
@@ -470,12 +470,12 @@ section.booking-container{
     box-shadow: 0 0 16px;
     width: 64%;
     height: 400px;
-    position: absolute;
+    position: relative;
     margin-right: auto;
     margin-left: auto;
     left: 0;
     right: 0;
-    bottom: 80px;
+    top: 160px;
     z-index: 1;
     display: flex;
 }
