@@ -705,9 +705,9 @@ option{
         box-shadow: 0 0 0px;
         width: 100%;
         height: auto;
-        position: relative;
+        position: static;
         bottom: 0px;
-        display: flex;;
+        display: flex;
     }
     div.booking-information{
         background-color: var(--secondary10);
@@ -800,7 +800,6 @@ option{
         width: 100%;
     }
     section.booking-container{
-        position: relative;
         z-index: 0;
         flex-wrap: wrap;
     }
