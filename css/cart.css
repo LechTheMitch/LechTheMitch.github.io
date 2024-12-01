@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h3{
+    margin: 20px;
+    font-style: italic;
+}
+.shopping_cart{
+    width: 45%;
+    height: 500px;
+    background-color: #ffffffad;
+}
+.product{
+    margin:50px 10px 50px  10px ;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+    border-bottom: 2px solid #b7b7b7;
+}
+.summary{
+    width: 45%;
+    height: 500px;
+    background-color: #FF9D2D;
+    padding-left: 50px;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+
+    margin-right: 30px;
+}
+.summary p{
+    margin: 20px 0 20px 0;
+}
+input,button{
+    margin-bottom: 40px;
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+}
+hr{
+    margin-right: 40px;
+}
+img{
+    width: 70px;
+}
+input::placeholder{
+    padding-left: 10px;
+}
+button{
+    background-color: #111;
+    color: aliceblue;
+}
+
+.primary10 {
+    color: #7A0D10;
+}
+
+.primary11 {
+    color: #6E0C0E;
+}
+
+.primary12 {
+    color: #620A0D;
+}
+
+.primary13 {
+    color: #55090B;
+}
+
+.primary9 {
+    color: #872528;
+}
+
+.primary8 {
+    color: #953D40;
+}
+
+.primary7 {
+    color: #A25658;
+}
+
+.secondary10 {
+    color: #FF9D2D;
+}
+
+.secondary11 {
+    color: #E68D29;
+}
+
+.secondary12 {
+    color: #CC7E24;
+}
+
+.secondary13 {
+    color: #B36E1F;
+}
+
+.secondary9 {
+    color: #FFA742;
+}
+
+.secondary8 {
+    color: #FFB157;
+}
+
+.secondary7 {
+    color: #FFBA6C;
+}
+
+.black100 {
+    color: #0C0102;
+}
+
+.black75 {
+    color: #383838;
+}
+
+.gray100 {
+    color: #A3A3A3;
+}
+
+.gray80 {
+    color: #DADADA;
+}
+
+.gray60 {
+    color: #E3E3E3;
+}
+
+.gray40 {
+    color: #EDEDED;
+}
+
+.gray20 {
+    color: #F6F6F6;
+}
+
+.hide {
+    display: none;
+}
