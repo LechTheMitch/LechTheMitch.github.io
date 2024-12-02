@@ -3,12 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+h1 span{
+color: #FF9D2D;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #b7b7b7;
+    padding: 10px;
+    padding-inline: 80px;
+    margin-bottom: 100px;
+}
 body{
     background-color: aliceblue;
+
+    height: 100vh;
+}
+.main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 h3{
     margin: 20px;
@@ -53,6 +68,8 @@ hr{
 }
 img{
     width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
 input::placeholder{
     padding-left: 10px;
@@ -61,91 +78,46 @@ button{
     background-color: #111;
     color: aliceblue;
 }
-
-.primary10 {
-    color: #7A0D10;
+i{
+    padding-left: 5px;
 }
-
-.primary11 {
-    color: #6E0C0E;
+ .navbar div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    position: relative;
+ }
+ .span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D0D7E1;
+    position: absolute;
+    top: -2px;
+    left: 0;
+ }
+ 
+ .button{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:.7s ease ;
+    background-color:#D0D7E1;
+ }
+.button:hover{
+    transform: scale(1.1);
 }
-
-.primary12 {
-    color: #620A0D;
-}
-
-.primary13 {
-    color: #55090B;
-}
-
-.primary9 {
-    color: #872528;
-}
-
-.primary8 {
-    color: #953D40;
-}
-
-.primary7 {
-    color: #A25658;
-}
-
-.secondary10 {
-    color: #FF9D2D;
-}
-
-.secondary11 {
-    color: #E68D29;
-}
-
-.secondary12 {
-    color: #CC7E24;
-}
-
-.secondary13 {
-    color: #B36E1F;
-}
-
-.secondary9 {
-    color: #FFA742;
-}
-
-.secondary8 {
-    color: #FFB157;
-}
-
-.secondary7 {
-    color: #FFBA6C;
-}
-
-.black100 {
-    color: #0C0102;
-}
-
-.black75 {
-    color: #383838;
-}
-
-.gray100 {
-    color: #A3A3A3;
-}
-
-.gray80 {
-    color: #DADADA;
-}
-
-.gray60 {
-    color: #E3E3E3;
-}
-
-.gray40 {
-    color: #EDEDED;
-}
-
-.gray20 {
-    color: #F6F6F6;
-}
-
-.hide {
-    display: none;
+i{
+    color:#FF9D2D;
+ }
+#add{
+    color:#FF9D2D;
 }
