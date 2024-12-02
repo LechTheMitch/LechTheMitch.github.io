@@ -4,31 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CART</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
 </head>
 <body>
+    <div class="navbar">
+        <h1>Tasty <span>Food</span></h1>
+        <div>
+            <div class="order">
+           <i class="fa fa-shopping-cart"></i>
+             <div class="cart">
+              <span class="span"  id="span"></span>
+              </div>
+            </div>
+             <div class="button">
+             </div>
+  </div>
+    </div>
+    <div class="main">
     <div class="shopping_cart">
         <h3>Shopping Cart</h3>
 <div class="product">
-    <img src="./images/beef005.jpg" alt="">
+    <img src="beef005.jpg" alt="">
     <p>Cotton T-shirt</p>
-    <i>- | +</i>
+    <i>          <i class="fa fa-minus" id="minus"></i>
+    |              <i class="fa fa-plus" id="plus"></i>
+</i>
     <p>$579</p>
     <i>x</i>
 </div>
 <div class="product">
-    <img src="./images/food-square.jpg" alt="">
+    <img src="food-square.jpg" alt="">
     <p>Cotton T-shirt</p>
-    <i>- | +</i>
+    <i>          <i class="fa fa-minus" id="minus"></i>
+    |              <i class="fa fa-plus" id="plus"></i>
+</i>
     <p>$579</p>
     <i>x</i>
 </div>
 <div class="product">
-    <img src="./images/soup-4.png" alt="">
+    <img src="soup-4.png" alt="">
     <p>Cotton T-shirt</p>
-    <i>- | +</i>
+    <i>          <i class="fa fa-minus" id="minus"></i>
+    |              <i class="fa fa-plus" id="plus"></i>
+</i>
     <p>$579</p>
     <i>x</i>
 </div>
@@ -49,7 +70,35 @@
     <p>TOTAL</p>
     <p>$944</p>
     </div>
-    <button><a href="payment.html">CHECKOUT</a></button>
+    <button>CHECKOUT</button>
     </div>
+</div>
+
+    <script>
+        let span=document.getElementById('span');
+let plus=document.getElementById('plus');
+let minus=document.getElementById('minus');
+let s=0;
+
+for(let i=0;i<30;i++){
+    plus.onclick=function N(){
+        s=s+1;
+        span.innerHTML=s;
+       }
+}
+
+for(let i=0;i<30;i++){
+    
+    minus.onclick=function N(){
+        if(s>0){
+        s=s-1;
+        span.innerHTML=s;
+       
+        }
+       }
+    
+      
+}
+    </script>
 </body>
 </html>
