@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .header{
+    text-align: center;
+} */
+p,h2, button,::placeholder{
+    color: #b16815;
+}
+body{
+    background-color: #d6d9dd;
+    height: 100vh;
+
+}
+.main{
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    padding-top:80px ;
+}
+.main1{
+    padding: 30px;
+    height: 700px;
+    background-color: #fa9625;
+}
+img{
+height: 700px;}
+.main h2{
+    margin-left: 35px;
+}
+.input{
+    width: 100%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+
+}
+
+input{
+    padding-left: 7px;
+    width:500px;
+    height: 30px;
+   outline: none;
+   border: none;
+   color: #b16815;
+   border-radius: 10px;
+   background-color: #e7e7e7;
+   border-bottom: 2px solid #FF9D2D;
+    margin-block: 16px;
+
+}
+.input p{
+    
+    margin: 24px 0;
+}
+.input button:not(:first-child){
+width:500px;
+height: 40px;
+border-radius: 15px;
+background-color: #b16815;
+color: #e7e7e7;
+transition: .7s;
+margin-top: 8px;
+
+}
+.input button:hover{
+    background-color: #e28111;
+    
+}
+button a{
+    color: white;
+}
+h2,p,::placeholder,button{
+    text-transform: capitalize;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+ 
+}
+.btn button{
+    width: 130px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #e7e7e7;
+    border: 2px solid #FF9D2D;
+    margin-inline:20px ;
+}
+.text{
+    font-size: 14px;
+    text-align: center;
+  margin-top: 24px;
+}
+.fixTextVisiblity{
+    color: white;
+}
+i{
+    color: #b16815;
+    margin-right: 8px;
+}
+.linkedButton{
+    color: white;
+    
+}
+.adminLogin{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
