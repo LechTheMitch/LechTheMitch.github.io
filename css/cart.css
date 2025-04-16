@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 span{
+color: #FF9D2D;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #b7b7b7;
+    padding: 10px;
+    padding-inline: 80px;
+    margin-bottom: 100px;
+}
+body{
+    background-color: rgb(246, 246, 247);
+
+    height: 100vh;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    margin: 20px;
+    font-style: italic;
+}
+.shopping_cart{
+    width: 45%;
+    height: 500px;
+    background-color: #ffffffad;
+}
+.product{
+    margin:50px 10px 50px  10px ;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+    border-bottom: 2px solid #b7b7b7;
+}
+.summary{
+    width: 45%;
+    height: 500px;
+    background-color: #FF9D2D;
+    padding-left: 50px;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+
+    margin-right: 30px;
+}
+.summary p{
+    margin: 20px 0 20px 0;
+}
+input,button{
+    margin-bottom: 40px;
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+}
+hr{
+    margin-right: 40px;
+}
+img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+input::placeholder{
+    padding-left: 10px;
+}
+button{
+    background-color: #111;
+    color: aliceblue;
+}
+i{
+    padding-left: 5px;
+}
+ .navbar div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    position: relative;
+ }
+ .span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D0D7E1;
+    position: absolute;
+    top: -2px;
+    left: 0;
+ }
+ 
+ .button{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:.7s ease ;
+    background-color:#D0D7E1;
+ }
+.button:hover{
+    transform: scale(1.1);
+}
+i{
+    color:#FF9D2D;
+ }
+#add{
+    color:#FF9D2D;
+}
+section.footer{
+    margin-top: 128px;
+}
